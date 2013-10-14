@@ -87,6 +87,10 @@
 <!-- Development Settings -->
     <!-- Dev Options Enabled by Default -->
     <string name="show_dev_already_enabled">No need, development settings are enabled by default.</string>
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Show CPU info</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
 
 <!-- Miscellaneous System Settings -->
     <!-- DUI -->
