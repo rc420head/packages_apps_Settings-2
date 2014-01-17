@@ -5,6 +5,8 @@
     <string name="header_category_aquarios">ROM Customization</string>
     <string name="aquarios_settings_title">The Aquarium</string>
     <string name="aquarios_settings_summary">Advanced ROM features</string>
+    <string name="supersu_title">SuperSU</string>
+    <string name="supersu_summary">Manage root permissions</string>    
     
      <!-- Linked / unlinked notification volume -->
     <string name="link_volume_option_title">Link ring and notification volume</string>
