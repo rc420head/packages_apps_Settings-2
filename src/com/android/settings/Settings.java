@@ -162,4 +162,5 @@ public class Settings extends SettingsActivity {
 
     // Aquarios Additions
     public static class AquariosSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class ExpandedDesktopSettingsActivity extends SettingsActivity { /* empty */ }
 }
