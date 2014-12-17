@@ -157,6 +157,11 @@
           android:key="screenshot_sound"
           android:title="@string/screenshot_sound_title" />
 
+        <!-- Volume adjustment sounds -->
+        <SwitchPreference
+          android:key="volume_adjust_sounds"
+          android:title="@string/volume_adjust_sounds_title" />
+
         <!-- Touch sounds -->
         <SwitchPreference
           android:key="touch_sounds"
