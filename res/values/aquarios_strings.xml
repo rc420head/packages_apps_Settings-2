@@ -10,7 +10,11 @@
     <!-- AquariOS version -->
     <string name="aquarios_version">AquariOS version</string>
     <string name="aquarios_version_default">Unknown</string>
-   <!-- Phone info shortcut -->
+    <!-- Phone info shortcut -->
     <string name="device_info_title">Phone info</string>
+    
+<!-- Development Settings -->
+    <!-- Dev Options Enabled by Default -->
+    <string name="show_dev_already_enabled">No need, development settings are enabled by default.</string>    
 </resources>
 
