@@ -5,5 +5,10 @@
     <string name="header_category_aquarios">Aquatic treasures</string>
     <string name="aquarios_settings_title">Coral reef</string>
     <string name="aquarios_settings_summary">Dive into the aquatic life</string>
+
+<!-- Device Info Settings -->
+    <!-- AquariOS version -->
+    <string name="aquarios_version">AquariOS version</string>
+    <string name="aquarios_version_default">Unknown</string>
 </resources>
 
