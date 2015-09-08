@@ -379,8 +379,7 @@ public final class BluetoothPairingDialog extends AlertActivity implements
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (mReceiverRegistered) {
-            mReceiverRegistered = false;
+        if (mReceiver != null) {
             unregisterReceiver(mReceiver);
         }
     }
