@@ -27,6 +27,10 @@
     <string name="enable_adb_summary_custom">Enable the Android Debug Bridge (adb) interface</string>
     <string name="adb_notify">ADB notification</string>
     <string name="adb_notify_summary">Display a notification when android debugging is enabled</string>
+    <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">Since the last update</string>
+    <string name="changelog_error">Unable to load changelog</string>
 
 <!-- Display Settings -->
     <!-- Display : Rotation -->
