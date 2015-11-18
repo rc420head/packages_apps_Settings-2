@@ -104,4 +104,7 @@
     <string name="alert_on_charged_level_90">"90%"</string>
     <string name="alert_on_charged_level_99">"99%"</string>
 
+    <!-- Unlink notification volume -->
+    <string name="link_volume_option_title">Link ring and notification volume</string>
+
 </resources>
