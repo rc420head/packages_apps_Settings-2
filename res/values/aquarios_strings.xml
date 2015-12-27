@@ -14,6 +14,11 @@
     <string name="link_volume_option_title">Link ring and notification volume</string>
     <string name="notification_volume_option_title">Notification volume</string>
     <string name="ring_notification_volume_option_title">Ring and notification volume</string>
+    
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
+    <string name="increasing_ring_min_volume_title">Start volume</string>
+    <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>    
 
      <!-- Changelog -->
     <string name="changelog_aquarios_title">Changelog</string>
@@ -28,6 +33,6 @@
     
     <!-- Vendor version -->
     <string name="vendor_version">Vendor version</string>
-    <string name="vendor_version_default">Unknown</string>            
+    <string name="vendor_version_default">Unknown</string>    
 </resources>
 
