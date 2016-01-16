@@ -277,4 +277,7 @@
     <string name="connected_signal_pref_title">Signal strength: %1$s</string>
     <string name="connected_signal_pref_summary">Tap for more info</string>
 
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
+
 </resources>
