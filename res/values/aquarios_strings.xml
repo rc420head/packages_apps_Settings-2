@@ -2,8 +2,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 <!-- Aquarios Customization Settings -->    
   <!-- Dashboard -->
-    <string name="header_category_noob">ROM Customization</string>
-    <string name="noob_settings_title">The Aquarium</string>
-    <string name="noob_settings_summary">Advanced ROM features</string>
+    <string name="header_category_aquarios">ROM Customization</string>
+    <string name="aquarios_settings_title">The Aquarium</string>
+    <string name="aquarios_settings_summary">Advanced ROM features</string>
 </resources>
 
