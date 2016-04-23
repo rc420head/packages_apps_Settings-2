@@ -130,7 +130,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private static final String MSAA_PROPERTY = "debug.egl.force_msaa";
     private static final String OPENGL_TRACES_PROPERTY = "debug.egl.trace";
     private static final String TUNER_UI_KEY = "tuner_ui";
-    private static final String COLOR_TEMPERATURE_PROPERTY = "persist.sys.debug.color_temp";
 
     private static final String DEBUG_APP_KEY = "debug_app";
     private static final String WAIT_FOR_DEBUGGER_KEY = "wait_for_debugger";
@@ -188,7 +187,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private static final String WIFI_ALLOW_SCAN_WITH_TRAFFIC_KEY = "wifi_allow_scan_with_traffic";
     private static final String USB_CONFIGURATION_KEY = "select_usb_configuration";
     private static final String MOBILE_DATA_ALWAYS_ON = "mobile_data_always_on";
-    private static final String KEY_COLOR_MODE = "color_mode";
     private static final String FORCE_RESIZABLE_KEY = "force_resizable_activities";
     private static final String COLOR_TEMPERATURE_KEY = "color_temperature";
 
@@ -306,11 +304,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private SwitchPreference mShowAllANRs;
 
-    private ColorModePreference mColorModePreference;
-
     private SwitchPreference mForceResizable;
-
-    private SwitchPreference mColorTemperaturePreference;
 
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
 
@@ -504,22 +498,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
         mOtaDisableAutomaticUpdate = findAndInitSwitchPref(OTA_DISABLE_AUTOMATIC_UPDATE_KEY);
 
-        mColorModePreference = (ColorModePreference) findPreference(KEY_COLOR_MODE);
-        mColorModePreference.updateCurrentAndSupported();
-        if (mColorModePreference.getColorModeCount() < 2) {
-            removePreference(KEY_COLOR_MODE);
-            mColorModePreference = null;
-        }
         updateWebViewProviderOptions();
-
-        mColorTemperaturePreference = (SwitchPreference) findPreference(COLOR_TEMPERATURE_KEY);
-        if (getResources().getBoolean(R.bool.config_enableColorTemperature)) {
-            mAllPrefs.add(mColorTemperaturePreference);
-            mResetSwitchPrefs.add(mColorTemperaturePreference);
-        } else {
-            removePreference(COLOR_TEMPERATURE_KEY);
-            mColorTemperaturePreference = null;
-        }
 
         // make sure we dont leave an unremovable bugreport in power menu
         final ContentResolver cr = getActivity().getContentResolver();
@@ -643,18 +622,11 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         }
         mSwitchBar.show();
 
-        if (mColorModePreference != null) {
-            mColorModePreference.startListening();
-            mColorModePreference.updateCurrentAndSupported();
-        }
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        if (mColorModePreference != null) {
-            mColorModePreference.stopListening();
-        }
     }
 
     @Override
@@ -743,9 +715,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         updateWebViewMultiprocessOptions();
         updateWebViewProviderOptions();
         updateOemUnlockOptions();
-        if (mColorTemperaturePreference != null) {
-            updateColorTemperature();
-        }
         updateBluetoothDisableAbsVolumeOptions();
         updateForceAuthorizeSubstratumPackagesOptions();
     }
@@ -1367,18 +1336,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             Settings.Secure.putInt(cr, Settings.Secure.ACCESSIBILITY_DISPLAY_DALTONIZER_ENABLED, 1);
             Settings.Secure.putInt(cr, Settings.Secure.ACCESSIBILITY_DISPLAY_DALTONIZER, newMode);
         }
-    }
-
-    private void updateColorTemperature() {
-        updateSwitchPreference(mColorTemperaturePreference,
-                SystemProperties.getBoolean(COLOR_TEMPERATURE_PROPERTY, false));
-    }
-
-    private void writeColorTemperature() {
-        SystemProperties.set(COLOR_TEMPERATURE_PROPERTY,
-                mColorTemperaturePreference.isChecked() ? "1" : "0");
-        pokeSystemProperties();
-        Toast.makeText(getActivity(), R.string.color_temperature_toast, Toast.LENGTH_LONG).show();
     }
 
     private void updateUSBAudioOptions() {
@@ -2044,8 +2001,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             writeWifiAllowScansWithTrafficOptions();
         } else if (preference == mMobileDataAlwaysOn) {
             writeMobileDataAlwaysOnOptions();
-        } else if (preference == mColorTemperaturePreference) {
-            writeColorTemperature();
         } else if (preference == mUSBAudio) {
             writeUSBAudioOptions();
         } else if (preference == mForceResizable) {
