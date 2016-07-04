@@ -43,5 +43,7 @@
                 android:resource="@string/rootmanagement_dashboard_summary" />
         </activity>
 
+	<activity android:name=".aquarios.Changelog" />
+
     </application>
 </manifest>
