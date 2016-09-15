@@ -209,5 +209,9 @@
                 android:value="org.carbonrom.carbonfibers.fragments.system.SmartPixels" />
         </activity>
 
+        <!-- Battery and notification lights -->
+        <activity android:name="com.aquarios.coralreef.fragments.NotificationLightSettings" />
+        <activity android:name="com.aquarios.coralreef.fragments.BatteryLightSettings" />
+
     </application>
 </manifest>
