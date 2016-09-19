@@ -12,9 +12,12 @@
     <string name="aquarios_version_default">Unknown</string>
     <!-- Phone info shortcut -->
     <string name="device_info_title">Phone info</string>
-    
+    <!-- Vendor version -->
+    <string name="vendor_version">Vendor version</string>
+    <string name="vendor_version_default">Unknown</string>
+
 <!-- Development Settings -->
     <!-- Dev Options Enabled by Default -->
-    <string name="show_dev_already_enabled">No need, development settings are enabled by default.</string>    
+    <string name="show_dev_already_enabled">No need, development settings are enabled by default.</string>
 </resources>
 
