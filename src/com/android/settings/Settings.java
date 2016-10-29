@@ -163,4 +163,8 @@ public class Settings extends SettingsActivity {
     // Aquarios Additions
     public static class AquariosSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ExpandedDesktopSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class NavigationSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class FlingSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class SmartbarSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class PulseSettingsActivity extends SettingsActivity { /* empty */ }
 }

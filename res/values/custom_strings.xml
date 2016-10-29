@@ -15,6 +15,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<!-- Navigation -->
+    <string name="navigation_category">Navigation</string>
+
     <!-- Expanded desktop -->
     <string name="power_menu_expanded_desktop">Expanded desktop</string>
     <string name="expanded_hide_nothing">Hide nothing</string>
