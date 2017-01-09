@@ -12,7 +12,7 @@
     <string name="ring_notification_volume_option_title">Ring and notification volume</string>
 
      <!-- Changelog -->
-    <string name="changelog_candy_title">Changelog</string>
-    <string name="changelog_candy_error">Unable to load changelog</string>
+    <string name="changelog_aquarios_title">Changelog</string>
+    <string name="changelog_aquarios_error">Unable to load changelog</string>
 </resources>
 
