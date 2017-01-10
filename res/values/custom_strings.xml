@@ -45,15 +45,15 @@
     <string name="show_enter_key_title">Show enter key</string>
     <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
     
-   <!-- Substratum strings -->
-   <string name="filter_substratum_apps">Substratum overlays</string>
-   <string name="menu_show_substratum">Show overlays</string>
-   <string name="menu_hide_substratum">Hide overlays</string>
-   <string name="filter_substratum_icons">Substratum icon overlays</string>
-   <string name="menu_show_substratum_icons">Show icon overlays</string>
-   <string name="menu_hide_substratum_icons">Hide icon overlays</string>      
+    <!-- Substratum strings -->
+    <string name="filter_substratum_apps">Substratum overlays</string>
+    <string name="menu_show_substratum">Show overlays</string>
+    <string name="menu_hide_substratum">Hide overlays</string>
+    <string name="filter_substratum_icons">Substratum icon overlays</string>
+    <string name="menu_show_substratum_icons">Show icon overlays</string>
+    <string name="menu_hide_substratum_icons">Hide icon overlays</string>      
 
-    <!-- Display : Rotation -->
+    <!-- Display Settings -->
     <string name="display_rotation_title">Rotation</string>
     <string name="display_rotation_disabled">Disabled</string>
     <string name="display_rotation_unit">degrees</string>
@@ -62,12 +62,39 @@
     <string name="display_rotation_90_title">90 degrees</string>
     <string name="display_rotation_180_title">180 degrees</string>
     <string name="display_rotation_270_title">270 degrees</string>
+    <!-- Doze pulse options -->
+    <string name="summary_doze_enabled">Enabled</string>
+    <string name="summary_doze_disabled">Disabled</string>
+    <string name="doze_overwrite_value_title">Overwrite defaults</string>
+    <string name="doze_overwrite_value_summary">Allow override of default values with user config</string>
+    <string name="doze_pulse_title">User configurable settings</string>
+    <string name="doze_pulse_duration_in_title">Fade in</string>
+    <string name="doze_pulse_duration_in_summary"></string>
+    <string name="doze_pulse_duration_visible_title">Visible duration</string>
+    <string name="doze_pulse_duration_visible_summary"></string>
+    <string name="doze_pulse_duration_out_title">Fade out</string>
+    <string name="doze_pulse_duration_out_summary"></string>
+    <string name="doze_brightness_level_title">Brightness level</string>
+    <string name="onehundred_ms">100 ms</string>
+    <string name="twofifty_ms">250 ms</string>
+    <string name="fivehundred_ms_default">500 ms (default)</string>
+    <string name="sevenfifty_ms">750 ms</string>
+    <string name="one_second">1 s</string>
+    <string name="onehalf_second">1.5 s</string>
+    <string name="two_second">2 s</string>
+    <string name="twohalf_second">2.5 s</string>
+    <string name="three_second_default">3 s (default)</string>
+    <string name="threehalf_second">3.5 s</string>
+    <string name="four_second">4 s</string>
+    <string name="fourhalf_second">4.5 s</string>
+    <string name="five_second">5 s</string>
 
-    <!-- Sound: Linked / unlinked notification volume -->
+    <!-- Sound Settings -->
+    <!-- Linked / unlinked notification volume -->
     <string name="link_volume_option_title">Link ring and notification volume</string>
     <string name="notification_volume_option_title">Notification volume</string>
     <string name="ring_notification_volume_option_title">Ring and notification volume</string>
-    <!-- Sound: Increasing ring tone volume -->
+    <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
     <string name="increasing_ring_min_volume_title">Start volume</string>
     <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>  
@@ -88,7 +115,6 @@
     <string name="build_date_default">2015-01-01-0000</string>
     <!-- Phone info shortcut -->
     <string name="device_info_title">Phone info</string>
-
     <!-- Changelog -->
     <string name="changelog_aquarios_title">Changelog</string>
     <string name="changelog_aquarios_error">Unable to load changelog</string>
@@ -125,4 +151,5 @@
     <string name="adb_over_network">ADB over network</string>
     <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi\u2011Fi, USB networks). This setting is reset on reboot</string>
     <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
+
 </resources>
