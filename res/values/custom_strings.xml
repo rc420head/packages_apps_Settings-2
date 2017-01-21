@@ -12,6 +12,13 @@
     <string name="magisk_summary">Control modules and settings</string>
     <string name="kerneladiutor_title">Kernel Adiutor</string>
     <string name="kerneladiutor_summary">Tweak your kernel</string>
+   <!-- Dashboard columns -->
+    <string name="dashboard_columns_title">Dashboard Columns</string>
+    <string name="dashboard_columns_summary">Change the number of columns displayed in the dashboard</string>
+    <string name="dashboard_columns_dialog_title">Select dashboard columns</string>
+    <string name="dashboard_columns_default">One (two landscape)</string>
+    <string name="dashboard_columns_two">Two (three landscape)</string>
+    <string name="dashboard_columns_three">Three (four landscape)</string>
 
 <!-- Device Info Settings -->
     <!-- AquariOS version -->
