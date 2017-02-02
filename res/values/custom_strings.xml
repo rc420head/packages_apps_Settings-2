@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Pure Nexus Project
+     Copyright (C) 2016 Flash ROM
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<!-- Navigation -->
+    <string name="navigation_category">Navigation</string>
+
+    <!-- Expanded desktop -->
+    <string name="power_menu_expanded_desktop">Expanded desktop</string>
+    <string name="expanded_hide_nothing">Hide nothing</string>
+    <string name="expanded_hide_status">Hide status bar</string>
+    <string name="expanded_hide_navigation">Hide navigation bar</string>
+    <string name="expanded_hide_both">Hide both</string>
+    <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set "Enabled for all" to the off position</string>
+    <string name="expanded_desktop_state">Expanded state</string>
+    <string name="expanded_enabled_for_all">Enabled for all</string>
+    <string name="expanded_user_configurable">User configurable</string>
+    <string name="expanded_desktop_style">Expanded desktop style</string>
+    <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
+    <string name="expanded_desktop_title">Expanded desktop options</string>
+    
+    <!-- Keyboard and Input IME methods  -->
+    <string name="title_keyboard_input">Advanced options</string>
+    <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
+    <string name="disable_fullscreen_keyboard_summary">Landscape keyboard will never take up entire screen</string>
+    <string name="keyboard_rotation_toggle_title">Auto keyboard rotation</string>
+    <string name="keyboard_rotation_toggle_summary">Force auto-rotate when keyboard is shown</string>
+    <string name="keyboard_rotation_timeout_title">Auto-rotate timeout</string>
+    <string name="keyboard_rotation_timeout_summary">Disables auto-rotate sensor <xliff:g id="rotate_timeout">%1$s</xliff:g> seconds after keyboard is hidden</string>
+    <string name="keyboard_rotation_dialog">This feature forces auto-rotate to turn on temporarily while the keyboard is shown.  It has no effect when auto-rotate is already enabled.</string>
+    <string name="show_enter_key_title">Show enter key</string>
+    <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
+    
+<!-- Substratum strings -->
+   <string name="filter_substratum_apps">Substratum overlays</string>
+   <string name="menu_show_substratum">Show overlays</string>
+   <string name="menu_hide_substratum">Hide overlays</string>
+   <string name="filter_substratum_icons">Substratum icon overlays</string>
+   <string name="menu_show_substratum_icons">Show icon overlays</string>
+   <string name="menu_hide_substratum_icons">Hide icon overlays</string>      
+</resources>
