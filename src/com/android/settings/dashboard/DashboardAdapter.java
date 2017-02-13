@@ -15,6 +15,8 @@
  */
 package com.android.settings.dashboard;
 
+import android.provider.Settings;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
@@ -107,13 +109,23 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
     }
 
     public List<Tile> getSuggestions() {
-        return mSuggestions;
+        if ((Settings.System.getInt(mContext.getContentResolver(),
+                    Settings.System.DISABLE_SUGGESTIONS, 0) == 0)) {
+             return null;
+        } else {
+             return mSuggestions;
+        }
     }
 
     public void setCategoriesAndSuggestions(List<DashboardCategory> categories,
             List<Tile> suggestions) {
-        mSuggestions = suggestions;
-        mCategories = categories;
+            mSuggestions = suggestions;
+            mCategories = categories;
+       if ((Settings.System.getInt(mContext.getContentResolver(),
+             Settings.System.DISABLE_SUGGESTIONS, 0) == 0)) {
+             mSuggestions = null;
+             recountItems();
+        } else {
 
         TypedValue tintColorValue = new TypedValue();
         mContext.getResources().getValue(R.color.external_tile_icon_tint_color,
@@ -135,6 +147,7 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
                 }
             }
         }
+       }
         recountItems();
     }
 
@@ -351,8 +364,13 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
         holder.icon.setImageDrawable(mCache.getIcon(tile.icon));
         holder.title.setText(tile.title);
         if (!TextUtils.isEmpty(tile.summary)) {
-            holder.summary.setText(tile.summary);
-            holder.summary.setVisibility(View.VISIBLE);
+           if ((Settings.System.getInt(mContext.getContentResolver(),
+                 Settings.System.REMOVE_TILE_SUMMARY, 0) == 1)) {
+                 holder.summary.setVisibility(View.GONE);
+             } else {
+				holder.summary.setText(tile.summary);
+                holder.summary.setVisibility(View.VISIBLE);
+             }
         } else {
             holder.summary.setVisibility(View.GONE);
         }
