@@ -258,7 +258,7 @@
     <string name="volume_steps_7">7</string>
     <string name="volume_steps_5">5</string>
 
-<!-- Gesture Settings -->
+    <!-- Gesture Settings -->
     <!-- Fingerprint Quick Pulldown -->
     <string name="quick_pulldown_fp_title">Fingerprint quick pulldown</string>
     <string name="quick_pulldown_fp_summary">Enable expanding the Quick Settings with only one swipe on the fingerprint sensor</string>
@@ -266,4 +266,8 @@
     <string name="fp_swipe_call_actions_disabled">Disabled</string>
     <string name="fp_swipe_call_actions_updown_answer_call">Swipe up or down to respond to incoming calls</string>
     <string name="fp_swipe_call_actions_up_answer_down_silence">Swipe up to respond to incoming calls, down to silence them</string>
+
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Pocket detection</string>
+    <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
 </resources>

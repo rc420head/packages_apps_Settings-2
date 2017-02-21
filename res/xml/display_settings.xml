@@ -93,6 +93,11 @@
                 android:key="lift_to_wake"
                 android:title="@string/lift_to_wake_title" />
 
+       <SwitchPreference
+                android:key="pocket_judge"
+                android:title="@string/pocket_judge_title"
+                android:summary="@string/pocket_judge_summary" />
+
         <SwitchPreference
                 android:key="tap_to_wake"
                 android:title="@string/tap_to_wake"
@@ -147,5 +152,4 @@
                 android:entries="@array/display_rotation_entries"
                 android:entryValues="@array/display_rotation_values"
                 android:persistent="false" />
-
 </PreferenceScreen>
