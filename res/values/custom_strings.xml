@@ -32,7 +32,7 @@
     <string name="expanded_desktop_style">Expanded desktop style</string>
     <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
     <string name="expanded_desktop_title">Expanded desktop options</string>
-    
+   
     <!-- Keyboard and Input IME methods  -->
     <string name="title_keyboard_input">Advanced options</string>
     <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
@@ -52,4 +52,14 @@
    <string name="filter_substratum_icons">Substratum icon overlays</string>
    <string name="menu_show_substratum_icons">Show icon overlays</string>
    <string name="menu_hide_substratum_icons">Hide icon overlays</string>      
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="display_rotation_disabled">Disabled</string>
+    <string name="display_rotation_unit">degrees</string>
+    <string name="display_rotation_category_title">Rotation modes</string>
+    <string name="display_rotation_0_title">0 degrees</string>
+    <string name="display_rotation_90_title">90 degrees</string>
+    <string name="display_rotation_180_title">180 degrees</string>
+    <string name="display_rotation_270_title">270 degrees</string>
 </resources>
