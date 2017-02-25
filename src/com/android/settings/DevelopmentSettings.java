@@ -247,7 +247,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private boolean mHaveDebugSettings;
     private boolean mDontPokeProperties;
 
-    private SwitchPreference mForceAuthorizeSustratumPackages;
+    private SwitchPreference mForceAuthorizeSubstratumPackages;
 
     private SwitchPreference mEnableAdb;
     private SwitchPreference mAdbNotify;
