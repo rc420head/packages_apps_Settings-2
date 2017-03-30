@@ -174,4 +174,5 @@ public class Settings extends SettingsActivity {
     public static class SuperSUActivity extends SettingsActivity { /* empty */ }
     public static class KernelAdiutorActivity extends SettingsActivity { /* empty */ }
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
+    public static class NotificationDrawerSettingsActivity extends SettingsActivity { /* empty */ }
 }
