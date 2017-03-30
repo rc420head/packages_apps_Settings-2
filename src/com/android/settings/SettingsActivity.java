@@ -140,6 +140,7 @@ import com.flash.settings.fragments.FlingSettings;
 import com.flash.settings.fragments.NavbarSettings;
 import com.flash.settings.fragments.SmartbarSettings;
 import com.flash.settings.fragments.PulseSettings;
+import com.aquarios.settings.fragments.NotificationDrawerSettings;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -383,7 +384,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
             PulseSettings.class.getName(),
-            RunningServices.class.getName()
+            RunningServices.class.getName(),
+            NotificationDrawerSettings.class.getName()
     };
 
 
