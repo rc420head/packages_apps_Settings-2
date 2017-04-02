@@ -75,7 +75,7 @@
     <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
     <string name="expanded_desktop_title">Expanded desktop options</string>
 
-<!-- Sound Settings -->
+    <!-- Sound Settings -->
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sound</string>
     <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
@@ -106,4 +106,8 @@
     <string name="four_second">4 s</string>
     <string name="fourhalf_second">4.5 s</string>
     <string name="five_second">5 s</string>
+
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevent accidental wake up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 </resources>
