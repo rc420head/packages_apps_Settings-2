@@ -236,6 +236,8 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final String SUBSTRATUM_FRAGMENT = "com.android.settings.Substratum";
 
+    private static final String KA_FRAGMENT = "com.android.settings.KernelAdiutor";
+
     private String mFragmentClass;
 
     private CharSequence mInitialTitle;
@@ -1046,6 +1048,14 @@ public class SettingsActivity extends SettingsDrawerActivity
             finish();
             return null;
         }
+
+        if (KA_FRAGMENT.equals(fragmentName)) {
+            Intent kernelAdiutorIntent = new Intent();
+            kernelAdiutorIntent.setClassName("com.grarak.kerneladiutor", "com.grarak.kerneladiutor.activities.MainActivity");
+            startActivity(kernelAdiutorIntent);
+            finish();
+            return null;
+        } 
 
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
