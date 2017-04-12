@@ -134,7 +134,7 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
-import com.aquarios.settings.AquariosSettings;
+import com.aquarios.settings.CoralReef;
 import com.flash.settings.fragments.FlingSettings;
 import com.flash.settings.fragments.NavbarSettings;
 import com.flash.settings.fragments.SmartbarSettings;
@@ -372,7 +372,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             NightDisplaySettings.class.getName(),
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
-	        AquariosSettings.class.getName(),
+	        CoralReef.class.getName(),
             ExpandedDesktopPreferenceFragment.class.getName(),
             NavbarSettings.class.getName(),
             FlingSettings.class.getName(),
