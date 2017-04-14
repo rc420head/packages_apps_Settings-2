@@ -135,10 +135,10 @@ import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 import com.aquarios.settings.CoralReef;
-import com.flash.settings.fragments.FlingSettings;
-import com.flash.settings.fragments.NavbarSettings;
-import com.flash.settings.fragments.SmartbarSettings;
-import com.flash.settings.fragments.PulseSettings;
+import com.dui.settings.fragments.FlingSettings;
+import com.dui.settings.fragments.NavbarSettings;
+import com.dui.settings.fragments.SmartbarSettings;
+import com.dui.settings.fragments.PulseSettings;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -252,7 +252,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             Settings.SimSettingsActivity.class.getName(),
             Settings.WirelessSettingsActivity.class.getName(),
             //custom_section
-	    AquariosSettings.class.getName(),
+	        CoralReef.class.getName(),
             //device_section
             Settings.HomeSettingsActivity.class.getName(),
             Settings.SoundSettingsActivity.class.getName(),
