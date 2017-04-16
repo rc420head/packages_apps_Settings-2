@@ -113,9 +113,9 @@
     <string name="changelog_aquarios_error">Unable to load changelog</string>
 
     <!-- Dashboard -->
-    <string name="header_category_aquarios">ROM Customization</string>
-    <string name="aquarios_settings_title">The Aquarium</string>
-    <string name="aquarios_settings_summary">Advanced ROM features</string>
+    <string name="header_category_aquarios">Aquatic Treasures</string>
+    <string name="aquarios_settings_title">Coral Reef</string>
+    <string name="aquarios_settings_summary">Dive into the aquatic life</string>
     <string name="magisk_title">Magisk Manager</string>
     <string name="magisk_summary">Control modules and settings</string>
     <string name="supersu_title">SuperSU</string>
