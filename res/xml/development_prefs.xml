@@ -17,10 +17,10 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title="@string/development_settings_title">
-    <com.android.settings.BugreportPreference
+    <!--com.android.settings.BugreportPreference
             android:key="bugreport"
             android:title="@*android:string/bugreport_title"
-            android:dialogTitle="@*android:string/bugreport_title" />
+            android:dialogTitle="@*android:string/bugreport_title" />-->
 
     <PreferenceScreen
             android:key="local_backup_password"
@@ -105,8 +105,14 @@
 
         <SwitchPreference
             android:key="enable_adb"
-            android:title="@string/enable_adb"
-            android:summary="@string/enable_adb_summary"/>
+            android:title="@string/enable_adb_custom"
+            android:summary="@string/enable_adb_summary_custom"/>
+
+        <SwitchPreference
+            android:key="adb_notify"
+            android:title="@string/adb_notify"
+            android:summary="@string/adb_notify_summary"
+            android:dependency="enable_adb"/>
 
         <Preference android:key="clear_adb_keys"
                 android:title="@string/clear_adb_keys" />
@@ -115,11 +121,6 @@
             android:key="enable_terminal"
             android:title="@string/enable_terminal_title"
             android:summary="@string/enable_terminal_summary" />
-
-        <SwitchPreference
-            android:key="bugreport_in_power"
-            android:title="@string/bugreport_in_power"
-            android:summary="@string/bugreport_in_power_summary"/>
 
         <PreferenceScreen android:key="mock_location_app"
             android:title="@string/mock_location_app" />
@@ -154,6 +155,11 @@
             android:dialogTitle="@string/select_logpersist_dialog_title"
             android:entries="@array/select_logpersist_titles"
             android:entryValues="@array/select_logpersist_values" />
+
+        <SwitchPreference
+            android:key="force_authorize_substratum_packages"
+            android:title="@string/force_authorize_substratum_packages_title"
+            android:summary="@string/force_authorize_substratum_packages_summary" />
 
     </PreferenceCategory>
 

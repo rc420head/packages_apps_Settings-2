@@ -27,6 +27,7 @@ import android.content.Intent;
 import android.content.res.Resources ;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.graphics.PorterDuff;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -177,7 +178,8 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
         int[] colorPrivate = getColorPrivate(getResources());
         for (VolumeInfo vol : volumes) {
             if (vol.getType() == VolumeInfo.TYPE_PRIVATE) {
-                final long volumeTotalBytes = getTotalSize(vol);
+                final long volumeTotalBytes = PrivateStorageInfo.getTotalSize(vol,
+                        sTotalInternalStorage);
                 final int color = colorPrivate[privateCount++ % colorPrivate.length];
                 mInternalCategory.addPreference(
                         new StorageVolumePreference(context, vol, color, volumeTotalBytes));
@@ -201,6 +203,7 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
                 final Drawable icon = context.getDrawable(R.drawable.ic_sim_sd);
                 icon.mutate();
                 icon.setTint(getColorPublic(getResources()));
+                icon.setTintMode(PorterDuff.Mode.SRC_ATOP);
 
                 final Preference pref = new Preference(context);
                 pref.setKey(rec.getFsUuid());
