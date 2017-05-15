@@ -1080,10 +1080,10 @@ public class SettingsActivity extends SettingsDrawerActivity
             return null;
         }
 
-        if (KA_FRAGMENT.equals(fragmentName)) {
-            Intent kernelAdiutorIntent = new Intent();
-            kernelAdiutorIntent.setClassName("com.grarak.kerneladiutor", "com.grarak.kerneladiutor.activities.MainActivity");
-            startActivity(kernelAdiutorIntent);
+ 	    if (KA_FRAGMENT.equals(fragmentName)) {
+            Intent KernelAdiutorIntent = new Intent();
+            KernelAdiutorIntent.setClassName("com.grarak.kerneladiutor", "com.grarak.kerneladiutor.activities.MainActivity");
+            startActivity(KernelAdiutorIntent);
             finish();
             return null;
         } 
@@ -1202,6 +1202,16 @@ public class SettingsActivity extends SettingsDrawerActivity
         setTileEnabled(new ComponentName(packageName,
                         Settings.SubstratumActivity.class.getName()),
                 subSupported, isAdmin, pm); 
+
+        // Kernel Aduitor
+        boolean KernelAdiutorpresent = false;
+        try {
+            KernelAdiutorpresent = (getPackageManager().getPackageInfo("com.grarak.kerneladiutor", 0).versionCode > 0);
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.KernelAdiutorActivity.class.getName()),
+                KernelAdiutorpresent, isAdmin, pm); 
 
         // Reveal development-only quick settings tiles
         DevelopmentTiles.setTilesEnabled(this, showDev);
