@@ -411,13 +411,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         super.onResume();
         updateState();
 
-        boolean dozeEnabled = Settings.Secure.getInt(
-                getContentResolver(), Settings.Secure.DOZE_ENABLED, 1) != 0;
-        if (mDozeFragement != null) {
-            mDozeFragement.setSummary(dozeEnabled
-                    ? R.string.summary_doze_enabled : R.string.summary_doze_disabled);
-        }
-
         final long currentTimeout = Settings.System.getLong(getActivity().getContentResolver(),
                 SCREEN_OFF_TIMEOUT, FALLBACK_SCREEN_TIMEOUT_VALUE);
         mScreenTimeoutPreference.setValue(String.valueOf(currentTimeout));
