@@ -48,6 +48,7 @@
         <item>5 minutes</item>
         <item>10 minutes</item>
         <item>30 minutes</item>
+        <item>60 minutes</item>
     </string-array>
 
     <!-- Do not translate. -->
@@ -66,6 +67,8 @@
         <item>600000</item>
         <!-- Do not translate. -->
         <item>1800000</item>
+        <!-- Do not translate. -->
+        <item>3600000</item>
     </string-array>
 
     <!-- Display settings.  The delay in inactivity before the dream is shown. These are shown in a list dialog. -->
@@ -143,10 +146,31 @@
         <item msgid="490158884605093126">Largest</item>
     </string-array>
 
+    <string-array name="entries_font_size_percent">
+        <item>80%</item>
+        <item>85%</item>
+        <item>90%</item>
+        <item>95%</item>
+        <item>100%</item>
+        <item>105%</item>
+        <item>110%</item>
+        <item>115%</item>
+        <item>120%</item>
+        <item>125%</item>
+        <item>130%</item>
+    </string-array>
+
     <string-array name="entryvalues_font_size" translatable="false">
+        <item>0.80</item>
         <item>0.85</item>
-        <item>1.0</item>
+        <item>0.90</item>
+        <item>0.95</item>
+        <item>1.00</item>
+        <item>1.05</item>
+        <item>1.10</item>
         <item>1.15</item>
+        <item>1.20</item>
+        <item>1.25</item>
         <item>1.30</item>
     </string-array>
 
@@ -364,6 +388,28 @@
         <!-- Set usage cycle [CHAR LIMIT=25]-->
         <item>Set usage cycle...</item>
     </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi frequency band. -->
+    <string-array name="wifi_frequency_band_entries">
+        <!-- Operation on both 2.4 GHz and 5 GHz [CHAR LIMIT=25]-->
+        <item>Automatic</item>
+        <!-- Operation on 5 GHz alone [CHAR LIMIT=25]-->
+        <item>5 GHz only</item>
+        <!-- Operation on 2.4 GHz alone [CHAR LIMIT=25]-->
+        <item>2.4 GHz only</item>
+    </string-array>
+
+    <!-- Match with wifi_frequency_band_entries and the values of the settings in WifiManager. -->
+    <!-- Do not translate. -->
+    <string-array name="wifi_frequency_band_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+        <!-- Do not translate. -->
+        <item>2</item>
+    </string-array>
+
 
     <!-- Display options for UsageStats class -->
     <string-array name="usage_stats_display_order_types">
@@ -1000,6 +1046,8 @@
         <item>15</item>
         <item>20</item>
         <item>25</item>
+        <item>30</item>
+        <item>35</item>
     </integer-array>
 
     <!-- Process stats memory use details: labels for memory states -->

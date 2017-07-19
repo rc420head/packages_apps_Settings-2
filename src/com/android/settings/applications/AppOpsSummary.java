@@ -107,13 +107,16 @@ public class AppOpsSummary extends InstrumentedFragment {
         mContentContainer = container;
         mRootView = rootView;
 
-        mPageNames = getResources().getTextArray(R.array.app_ops_categories);
+        mPageNames = getResources().getTextArray(R.array.app_ops_categories_nitrogen);
 
         mViewPager = (ViewPager) rootView.findViewById(R.id.pager);
         MyPagerAdapter adapter = new MyPagerAdapter(getChildFragmentManager());
         mViewPager.setAdapter(adapter);
         mViewPager.setOnPageChangeListener(adapter);
         PagerTabStrip tabs = (PagerTabStrip) rootView.findViewById(R.id.tabs);
+
+        // HACK - https://code.google.com/p/android/issues/detail?id=213359
+        ((ViewPager.LayoutParams)tabs.getLayoutParams()).isDecor = true;
 
         Resources.Theme theme = tabs.getContext().getTheme();
         TypedValue typedValue = new TypedValue();

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014-2016 The Dirty Unicorns Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- DU Tweaks -->
+    <string name="dirtytweaks_title">Dirty Tweaks</string>
+    <string name="header_category_dirtytweaks">Customization</string>
+
+    <!-- DU version -->
+    <string name="mod_version">DU version</string>
+    <string name="mod_version_default">Unknown</string>
+
+    <!-- DU Updater -->
+    <string name="updater_title">Updater</string>
+    <string name="updater_dashboard_summary">Check for the latest update</string>
+
+    <!-- DU About -->
+    <string name="aboutdu">ROM information</string>
+    <string name="aboutdu_summary">Information about our project, developers and devices</string>
+
+    <!-- About phone screen -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2012-01-01-0000</string>
+    <string name="security_patch_custom">Security patch level</string>
+
+    <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+    <string name="local_backup_password_title">Desktop backup password</string>
+
+    <!-- Volume adjustment sounds -->
+    <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+
+    <!-- Density category -->
+    <string name="density_category">Density options</string>
+
+    <!-- ADB debugging notifications -->
+    <string name="enable_adb_custom">Android debugging</string>
+    <string name="enable_adb_summary_custom">Enable the Android Debug Bridge (adb) interface</string>
+    <string name="adb_notify">ADB notification</string>
+    <string name="adb_notify_summary">Display a notification when USB or network debugging is enabled</string>
+    <string name="adb_over_network">ADB over network</string>
+    <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi\u2011Fi, USB networks). This setting is reset on reboot</string>
+    <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
+    <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotation angles</string>
+    <string name="display_rotation_disabled">Disabled</string>
+    <string name="display_rotation_unit">degrees</string>
+    <string name="display_rotation_category_title">Rotation</string>
+    <string name="display_rotation_0_title">0 degrees</string>
+    <string name="display_rotation_90_title">90 degrees</string>
+    <string name="display_rotation_180_title">180 degrees</string>
+    <string name="display_rotation_270_title">270 degrees</string>
+
+    <!-- Gesture Settings -->
+    <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+    <string name="double_twist_for_camera_mode_custom_summary">To switch in and out of selfie mode in Google Camera, double-twist when you’re in the app</string>
+
+    <!-- Scramble PIN Layout on Lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+
+    <!-- Dashboard options -->
+    <string name="dashboard_category">Dashboard options</string>
+    <string name="dashboard_suggestions_title">Suggestions</string>
+    <string name="summary_dashboard_suggestions_enabled">Dashboard suggestions are enabled</string>
+    <string name="summary_dashboard_suggestions_disabled">Dashboard suggestions are disabled</string>
+    <string name="remove_tile_summaries_title">Summaries</string>
+    <string name="remove_tile_summaries_summary_enabled">Dashboard summaries are enabled</string>
+    <string name="remove_tile_summaries_summary_disabled">Dashboard summaries are disabled</string>
+    <string name="dashboard_conditions_title">Conditions</string>
+    <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
+    <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
+    <string name="dashboard_columns_portrait_title">Columns (portrait)</string>
+    <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
+
+    <!-- Bluetooth accept all files -->
+    <string name="bluetooth_accept_all_files">Accept all file types</string>
+
+    <!-- Root Management -->
+    <string name="rootmanagement_title">Root management</string>
+    <string name="rootmanagement_dashboard_summary">Manage root access</string>
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <string name="supersu_title">SuperSU</string>
+
+    <!-- Wake on Plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+
+    <!-- Camera shutter sound -->
+    <string name="camera_sounds_title">Camera shutter sound</string>
+    <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
+
+    <!-- Less Notification sounds -->
+    <string name="less_notification_sounds_title">Less frequent notification sounds</string>
+    <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
+    <string name="less_notification_sounds_default">Default Behavior</string>
+    <string name="less_notification_sounds_3s">3 seconds</string>
+    <string name="less_notification_sounds_5s">5 seconds</string>
+    <string name="less_notification_sounds_10s">10 seconds</string>
+    <string name="less_notification_sounds_15s">15 seconds</string>
+    <string name="less_notification_sounds_30s">30 seconds</string>
+    <string name="less_notification_sounds_45s">45 seconds</string>
+    <string name="less_notification_sounds_1m">1 minute</string>
+    <string name="less_notification_sounds_2m">2 minutes</string>
+    <string name="less_notification_sounds_5m">5 minutes</string>
+
+    <!-- Linked / unlinked notification volume -->
+    <string name="link_volume_option_title">Link ring and notification volume</string>
+    <string name="notification_volume_option_title">Notification volume</string>
+    <string name="ring_notification_volume_option_title">Ring and notification volume</string>
+
+    <!-- Themes -->
+    <string name="themes_title">Themes</string>
+    <string name="themes_dashboard_summary">Manage your themes</string>
+
+    <!-- Manage applications: Substratum overlays -->
+    <string name="menu_show_substratum">Show overlays</string>
+    <string name="menu_hide_substratum">Hide overlays</string>
+
+    <!-- Advanced night mode brightness -->
+    <string name="night_brightness_category">Brightness</string>
+    <string name="night_brightness_value_title">Night Light brightness</string>
+    <string name="night_brightness_text">When Night Light is enabled automatically set the desired brightness. The default brightness is set to low brightness</string>
+    <string name="night_bright_disabled">Disabled</string>
+    <string name="night_bright_low">low brightness</string>
+    <string name="night_bright_medium">medium brightness</string>
+    <string name="night_bright_min">minimum brightness</string>
+
+    <!-- Wi-Fi Hotspot -->
+    <string name="wifi_tether_options_category">Wi-Fi tether options</string>
+    <string name="wifi_hotspot_mode_title">Hotspot timeout</string>
+    <string name="wifi_tether_checkbox_text_custom">Enable hotspot</string>
+    <string name="wifi_tether_enabled_subtext_custom"><xliff:g id="network_ssid">%1$s</xliff:g> is now active</string>
+    <string name="wifi_tether_configure_ap_text_custom">Setup hotspot</string>
+    <string name="wifi_tether_configure_subtext_custom">Hotspot "<xliff:g id="network_ssid">\u0022%1$s\u0022</xliff:g>" configured</string>
+
+    <!-- NFC -->
+    <string name="nfc_options_category">NFC options</string>
+
+    <!-- double tap statusbar to sleep -->
+    <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
+    <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+
+    <!-- Lockscreen double tap to sleep -->
+    <string name="double_tap_sleep_anywhere_title">Double tap to sleep (lockscreen)</string>
+    <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
+
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
+    <string name="increasing_ring_min_volume_title">Start volume</string>
+    <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
+
+    <!-- IME Switcher -->
+    <string name="ime_switcher_notify">Selector notification</string>
+    <string name="ime_switcher_notify_summary">Display input method selector notification</string>
+
+    <!-- App Ops Settings -->
+    <string name="app_ops_settings">App ops</string>
+    <string name="app_ops_settings_summary">View or change app permissions</string>
+
+</resources>

@@ -331,7 +331,11 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
                     mRingerMode == AudioManager.RINGER_MODE_VIBRATE, muted);
             mNotificationPreference.showIcon(iconId);
             if (mVoiceCapable) {
-                mNotificationPreference.setEnabled(mRingerMode == AudioManager.RINGER_MODE_NORMAL);
+                try {
+                    mNotificationPreference.setEnabled(mRingerMode == AudioManager.RINGER_MODE_NORMAL);
+                } catch (IllegalStateException ignored) {
+                    // Ignore
+                }
             }
         }
     }
@@ -412,7 +416,11 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
                 final boolean linkEnabled = Settings.System.getInt(getContentResolver(),
                         Settings.System.VOLUME_LINK_NOTIFICATION, 1) == 1;
                 if (!linkEnabled) {
-                    updateNotificationPreference();
+                    mHandler.post(new Runnable() {
+                        public void run() {
+                            updateNotificationPreference();
+                        }
+                    });
                 }
             }
         }
