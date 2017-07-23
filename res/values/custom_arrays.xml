@@ -167,7 +167,7 @@
     </string-array>
 
     <!-- Names of categories of app ops tabs -->
-    <string-array name="app_ops_categories_nitrogen" translatable="false">
+    <string-array name="app_ops_categories_aquarios" translatable="false">
         <item>@string/app_ops_cat_location</item>
         <item>@string/app_ops_cat_personal</item>
         <item>@string/app_ops_cat_messaging</item>
@@ -176,7 +176,7 @@
     </string-array>
 
     <!-- User display names for app ops codes -->
-    <string-array name="app_ops_labels_nitrogen" translatable="false">
+    <string-array name="app_ops_labels_aquarios" translatable="false">
         <!-- OP_COARSE_LOCATION -->
         <item>@string/app_ops_access_location</item>
         <!-- OP_FINE_LOCATION -->

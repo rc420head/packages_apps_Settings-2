@@ -107,7 +107,7 @@ public class AppOpsSummary extends InstrumentedFragment {
         mContentContainer = container;
         mRootView = rootView;
 
-        mPageNames = getResources().getTextArray(R.array.app_ops_categories_nitrogen);
+        mPageNames = getResources().getTextArray(R.array.app_ops_categories_aquarios);
 
         mViewPager = (ViewPager) rootView.findViewById(R.id.pager);
         MyPagerAdapter adapter = new MyPagerAdapter(getChildFragmentManager());
