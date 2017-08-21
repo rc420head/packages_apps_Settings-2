@@ -103,7 +103,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final int SHOW_NETWORK_NAME_ON = 1;
     private static final int SHOW_NETWORK_NAME_OFF = 0;
     private static final String PREF_KEY_DOUBLE_TAP_POWER = "gesture_double_tap_power"; //temp
-    private static final String KEY_PROXIMITY_WAKE = "proximity_on_wake";
 
     private static final String KEY_ROTATION_CATEGORY = "rotation_category";
     private static final String KEY_ACCELEROMETER = "accelerometer";
@@ -131,7 +130,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mCameraGesturePreference;
     private SwitchPreference mCameraDoubleTapPowerGesturePreference;
     private SwitchPreference mNetworkNameDisplayedPreference = null;
-    private SwitchPreference mProximityCheckOnWakePreference;
     private SwitchPreference mAccelerometerPreference;
 
     private MultiSelectListPreference mRotationAnglesPreference;
@@ -290,17 +288,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mNightModePreference.setValue(String.valueOf(currentNightMode));
             mNightModePreference.setOnPreferenceChangeListener(this);
         }
-
-        mProximityCheckOnWakePreference = (SwitchPreference) findPreference(KEY_PROXIMITY_WAKE);
-        boolean proximityCheckOnWake = getResources().getBoolean(
-                com.android.internal.R.bool.config_proximityCheckOnWake);
-        if (!proximityCheckOnWake) {
-            if (mProximityCheckOnWakePreference != null) {
-                removePreference(KEY_PROXIMITY_WAKE);
-            }
-            Settings.System.putInt(resolver, Settings.System.PROXIMITY_ON_WAKE, 0);
-        }
-
     }
 
     private static boolean isLiftToWakeAvailable(Context context) {
