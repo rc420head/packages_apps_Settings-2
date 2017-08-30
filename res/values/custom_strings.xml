@@ -19,8 +19,8 @@
 <!-- Aquarios Customization Settings -->    
   <!-- Dashboard -->
     <string name="header_category_aquarios">Aquatic Treasures</string>
-    <string name="aquarios_settings_title">Coral Reef</string>
-    <string name="aquarios_settings_summary">Dive into the aquatic life</string>
+    <string name="aquarios_coralreef_title">Coral Reef</string>
+    <string name="aquarios_coralreef_summary">Dive into the aquatic life</string>
 
     <string name="show_dev_already_enabled">No need. Developer options is already enabled.</string>
 </resources>
