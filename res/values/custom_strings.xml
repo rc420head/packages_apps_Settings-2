@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!-- Aquarios Customization Settings -->    
+  <!-- Dashboard -->
+    <string name="header_category_aquarios">Aquatic Treasures</string>
+    <string name="aquarios_settings_title">Coral Reef</string>
+    <string name="aquarios_settings_summary">Dive into the aquatic life</string>
+</resources>
+
