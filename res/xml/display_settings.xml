@@ -67,6 +67,11 @@
         android:title="@string/power_menu_expanded_desktop"
         android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
 
+    <SwitchPreference
+        android:key="pocket_judge"
+        android:title="@string/pocket_judge_title"
+        android:summary="@string/pocket_judge_summary" />
+
     <Preference
         android:key="font_size"
         android:title="@string/title_font_size"
