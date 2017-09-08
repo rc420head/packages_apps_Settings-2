@@ -175,4 +175,6 @@ public class Settings extends SettingsActivity {
     public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
 
+	// Custom Settings Categories
+    public static class CoralReefActivity extends SettingsActivity { /* empty */ }
 }
