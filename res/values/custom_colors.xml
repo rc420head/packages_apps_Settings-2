@@ -17,6 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Changelog Colors -->
-    <color name="changelog_title_color">?android:attr/colorAccent</color>
+    <color name="changelog_title_color">@*android:color/accent_material_dark</color>
 
 </resources>
