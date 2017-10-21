@@ -64,6 +64,7 @@ import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.Preference.OnPreferenceClickListener;
 import android.support.v7.preference.PreferenceGroup;
 import android.support.v7.preference.PreferenceScreen;
 import android.telephony.TelephonyManager;
@@ -87,6 +88,7 @@ import com.android.settings.R;
 import com.android.settings.RestrictedSettingsFragment;
 import com.android.settings.SettingsActivity;
 import com.android.settings.Utils;
+import com.android.settings.AnimationScalePreference;
 import com.android.settings.dashboard.DashboardFeatureProvider;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -108,7 +110,8 @@ import java.util.List;
  */
 public class DevelopmentSettings extends RestrictedSettingsFragment
         implements DialogInterface.OnClickListener, DialogInterface.OnDismissListener,
-        OnPreferenceChangeListener, SwitchBar.OnSwitchChangeListener, Indexable {
+        OnPreferenceChangeListener, SwitchBar.OnSwitchChangeListener, Indexable,
+        OnPreferenceClickListener {
     private static final String TAG = "DevelopmentSettings";
 
     /**
@@ -134,7 +137,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private static final String MSAA_PROPERTY = "debug.egl.force_msaa";
     private static final String OPENGL_TRACES_PROPERTY = "debug.egl.trace";
     private static final String TUNER_UI_KEY = "tuner_ui";
-    private static final String COLOR_TEMPERATURE_PROPERTY = "persist.sys.debug.color_temp";
 
     private static final String DEBUG_APP_KEY = "debug_app";
     private static final String WAIT_FOR_DEBUGGER_KEY = "wait_for_debugger";
@@ -193,7 +195,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private static final String WIFI_ALLOW_SCAN_WITH_TRAFFIC_KEY = "wifi_allow_scan_with_traffic";
     private static final String USB_CONFIGURATION_KEY = "select_usb_configuration";
     private static final String MOBILE_DATA_ALWAYS_ON = "mobile_data_always_on";
-    private static final String KEY_COLOR_MODE = "color_mode";
     private static final String FORCE_RESIZABLE_KEY = "force_resizable_activities";
     private static final String COLOR_TEMPERATURE_KEY = "color_temperature";
 
@@ -312,9 +313,9 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private ListPreference mUsbConfiguration;
     private ListPreference mTrackFrameTime;
     private ListPreference mShowNonRectClip;
-    private ListPreference mWindowAnimationScale;
-    private ListPreference mTransitionAnimationScale;
-    private ListPreference mAnimatorDurationScale;
+    private AnimationScalePreference mWindowAnimationScale;
+    private AnimationScalePreference mTransitionAnimationScale;
+    private AnimationScalePreference mAnimatorDurationScale;
     private ListPreference mOverlayDisplayDevices;
 
     private WebViewAppPreferenceController mWebViewAppPrefController;
@@ -330,11 +331,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private SwitchPreference mShowNotificationChannelWarnings;
 
-    private ColorModePreference mColorModePreference;
-
     private SwitchPreference mForceResizable;
-
-    private SwitchPreference mColorTemperaturePreference;
 
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
 
@@ -501,13 +498,14 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mBluetoothSelectA2dpLdacPlaybackQuality = addListPreference(BLUETOOTH_SELECT_A2DP_LDAC_PLAYBACK_QUALITY_KEY);
         initBluetoothConfigurationValues();
 
-        mWindowAnimationScale = addListPreference(WINDOW_ANIMATION_SCALE_KEY);
-        mTransitionAnimationScale = addListPreference(TRANSITION_ANIMATION_SCALE_KEY);
-        mAnimatorDurationScale = addListPreference(ANIMATOR_DURATION_SCALE_KEY);
         mOverlayDisplayDevices = addListPreference(OVERLAY_DISPLAY_DEVICES_KEY);
         mSimulateColorSpace = addListPreference(SIMULATE_COLOR_SPACE);
         mUSBAudio = findAndInitSwitchPref(USB_AUDIO_KEY);
         mForceResizable = findAndInitSwitchPref(FORCE_RESIZABLE_KEY);
+
+        mWindowAnimationScale = findAndInitAnimationScalePreference(WINDOW_ANIMATION_SCALE_KEY);
+        mTransitionAnimationScale = findAndInitAnimationScalePreference(TRANSITION_ANIMATION_SCALE_KEY);
+        mAnimatorDurationScale = findAndInitAnimationScalePreference(ANIMATOR_DURATION_SCALE_KEY);
 
         mImmediatelyDestroyActivities = (SwitchPreference) findPreference(
                 IMMEDIATELY_DESTROY_ACTIVITIES_KEY);
@@ -548,20 +546,30 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             removePreference(KEY_CONVERT_FBE);
         }
 
+<<<<<<< HEAD
         mColorModePreference = (ColorModePreference) findPreference(KEY_COLOR_MODE);
         mColorModePreference.updateCurrentAndSupported();
         if (mColorModePreference.getColorModeCount() < 2) {
             removePreference(KEY_COLOR_MODE);
             mColorModePreference = null;
+=======
+        /* With this commit we are removing the user switch, but this is a System API and as Google
+            says in the original commit this value is set internally (and its code is within Google services too).
+            Indeed the related frameworks base commit just publishes the String, but the main code is
+            somewhere else.
+            So, to be sure the automatic update function is really kept disabled, we are forcing it to disabled
+            (it means we are enabling the "disable automatic ota" feature) at least once in the onCreate method.*/
+        final ContentResolver cr = getActivity().getContentResolver();
+        if (!mOtaDisabledOnce && 
+                (Settings.Global.getInt(cr, Settings.Global.OTA_DISABLE_AUTOMATIC_UPDATE, 0) != 1)) {
+            Settings.Global.putInt(cr, Settings.Global.OTA_DISABLE_AUTOMATIC_UPDATE, 1);
+            mOtaDisabledOnce = true;
+>>>>>>> d69b11eb64f8ae4c2581ac0bb52531446b8323e2
         }
 
-        mColorTemperaturePreference = (SwitchPreference) findPreference(COLOR_TEMPERATURE_KEY);
-        if (getResources().getBoolean(R.bool.config_enableColorTemperature)) {
-            mAllPrefs.add(mColorTemperaturePreference);
-            mResetSwitchPrefs.add(mColorTemperaturePreference);
-        } else {
-            removePreference(COLOR_TEMPERATURE_KEY);
-            mColorTemperaturePreference = null;
+        if (Settings.Secure.getInt(cr,
+                Settings.Secure.BUGREPORT_IN_POWER_MENU, 0) == 1) {
+            Settings.Secure.putInt(cr, Settings.Secure.BUGREPORT_IN_POWER_MENU, 0);
         }
 
         /* With this commit we are removing the user switch, but this is a System API and as Google
@@ -610,6 +618,14 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             pref.setEnabled(false);
             mDisabledPrefs.add(pref);
         }
+    }
+
+    private AnimationScalePreference findAndInitAnimationScalePreference(String key) {
+        AnimationScalePreference pref = (AnimationScalePreference) findPreference(key);
+        pref.setOnPreferenceChangeListener(this);
+        pref.setOnPreferenceClickListener(this);
+        mAllPrefs.add(pref);
+        return pref;
     }
 
     private SwitchPreference findAndInitSwitchPref(String key) {
@@ -702,18 +718,11 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         }
         mSwitchBar.show();
 
-        if (mColorModePreference != null) {
-            mColorModePreference.startListening();
-            mColorModePreference.updateCurrentAndSupported();
-        }
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        if (mColorModePreference != null) {
-            mColorModePreference.stopListening();
-        }
     }
 
     @Override
@@ -821,9 +830,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         Preference webViewAppPref = findPreference(mWebViewAppPrefController.getPreferenceKey());
         mWebViewAppPrefController.updateState(webViewAppPref);
         updateOemUnlockOptions();
-        if (mColorTemperaturePreference != null) {
-            updateColorTemperature();
-        }
         updateBluetoothDisableAbsVolumeOptions();
         updateBluetoothEnableInbandRingingOptions();
         updateBluetoothA2dpConfigurationValues();
@@ -1341,18 +1347,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             Settings.Secure.putInt(cr, Settings.Secure.ACCESSIBILITY_DISPLAY_DALTONIZER_ENABLED, 1);
             Settings.Secure.putInt(cr, Settings.Secure.ACCESSIBILITY_DISPLAY_DALTONIZER, newMode);
         }
-    }
-
-    private void updateColorTemperature() {
-        updateSwitchPreference(mColorTemperaturePreference,
-                SystemProperties.getBoolean(COLOR_TEMPERATURE_PROPERTY, false));
-    }
-
-    private void writeColorTemperature() {
-        SystemProperties.set(COLOR_TEMPERATURE_PROPERTY,
-                mColorTemperaturePreference.isChecked() ? "1" : "0");
-        pokeSystemProperties();
-        Toast.makeText(getActivity(), R.string.color_temperature_toast, Toast.LENGTH_LONG).show();
     }
 
     private void updateUSBAudioOptions() {
@@ -2158,23 +2152,13 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                 != 0);
     }
 
-    private void updateAnimationScaleValue(int which, ListPreference pref) {
+    private void updateAnimationScaleValue(int which, AnimationScalePreference pref) {
         try {
             float scale = mWindowManager.getAnimationScale(which);
             if (scale != 1) {
                 mHaveDebugSettings = true;
             }
-            CharSequence[] values = pref.getEntryValues();
-            for (int i = 0; i < values.length; i++) {
-                float val = Float.parseFloat(values[i].toString());
-                if (scale <= val) {
-                    pref.setValueIndex(i);
-                    pref.setSummary(pref.getEntries()[i]);
-                    return;
-                }
-            }
-            pref.setValueIndex(values.length - 1);
-            pref.setSummary(pref.getEntries()[0]);
+            pref.setScale(scale);
         } catch (RemoteException e) {
         }
     }
@@ -2185,9 +2169,10 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         updateAnimationScaleValue(2, mAnimatorDurationScale);
     }
 
-    private void writeAnimationScaleOption(int which, ListPreference pref, Object newValue) {
+    private void writeAnimationScaleOption(int which, AnimationScalePreference pref,
+            Object newValue) {
         try {
-            float scale = newValue != null ? Float.parseFloat(newValue.toString()) : 1;
+            float scale = newValue != null ? Float.parseFloat(newValue.toString()) : 0.5f;
             mWindowManager.setAnimationScale(which, scale);
             updateAnimationScaleValue(which, pref);
         } catch (RemoteException e) {
@@ -2358,6 +2343,16 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     }
 
     @Override
+    public boolean onPreferenceClick(Preference preference) {
+        if (preference == mWindowAnimationScale ||
+                preference == mTransitionAnimationScale ||
+                preference == mAnimatorDurationScale) {
+            ((AnimationScalePreference) preference).click();
+        }
+        return false;
+    }
+
+    @Override
     public boolean onPreferenceTreeClick(Preference preference) {
         if (Utils.isMonkeyRunning()) {
             return false;
@@ -2476,8 +2471,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             writeWifiAllowScansWithTrafficOptions();
         } else if (preference == mMobileDataAlwaysOn) {
             writeMobileDataAlwaysOnOptions();
-        } else if (preference == mColorTemperaturePreference) {
-            writeColorTemperature();
         } else if (preference == mUSBAudio) {
             writeUSBAudioOptions();
         } else if (preference == mForceResizable) {
@@ -2710,7 +2703,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         }
     }
 
-    private static boolean isPackageInstalled(Context context, String packageName) {
+    public static boolean isPackageInstalled(Context context, String packageName) {
         try {
             return context.getPackageManager().getPackageInfo(packageName, 0) != null;
         } catch (NameNotFoundException e) {

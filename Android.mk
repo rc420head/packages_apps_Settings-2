@@ -18,6 +18,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_USE_AAPT2 := true
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
+LOCAL_SRC_FILES += $(call all-java-files-under, ../CoralReef/src)
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     android-support-v4 \
@@ -37,7 +38,24 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     jsr305 \
     settings-logtags
 
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
+    frameworks/support/v7/preference/res \
+    frameworks/support/v14/preference/res \
+    frameworks/support/v7/appcompat/res \
+    frameworks/support/v7/recyclerview/res \
+    packages/apps/CoralReef/res
+
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
+
+LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/AndroidManifest-aqua.xml
+
+LOCAL_AAPT_FLAGS := --auto-add-overlay \
+    --extra-packages android.support.v7.preference \
+    --extra-packages android.support.v14.preference \
+    --extra-packages android.support.v17.preference \
+    --extra-packages android.support.v7.appcompat \
+    --extra-packages android.support.v7.recyclerview \
+    --extra-packages com.aquarios.coralreef
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
@@ -54,3 +72,4 @@ include $(BUILD_PACKAGE)
 ifeq (,$(ONE_SHOT_MAKEFILE))
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
+

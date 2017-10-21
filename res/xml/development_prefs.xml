@@ -18,6 +18,12 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title="@string/development_settings_title">
 
+    <com.android.settings.preference.SecureSettingSwitchPreference
+        android:key="advanced_reboot"
+        android:title="@string/advanced_reboot_title"
+        android:summary="@string/advanced_reboot_summary"
+        android:defaultValue="true"/>
+
     <Preference
             android:key="local_backup_password"
             android:title="@string/local_backup_password_title"
@@ -65,11 +71,6 @@
         android:summary="@string/convert_to_file_encryption_enabled"
         android:fragment="com.android.settings.applications.ConvertToFbe" />
 
-    <com.android.settings.development.ColorModePreference
-        android:key="color_mode"
-        android:title="@string/picture_color_mode"
-        android:summary="@string/picture_color_mode_desc" />
-
     <Preference android:key="select_webview_provider"
         android:title="@string/select_webview_provider_title"
         android:dialogTitle="@string/select_webview_provider_dialog_title"
@@ -80,19 +81,19 @@
         android:title="@string/color_temperature"
         android:summary="@string/color_temperature_desc" />
 
-    <Preference
+    <!--Preference
         android:key="demo_mode"
         android:title="@string/demo_mode">
         <intent android:action="com.android.settings.action.DEMO_MODE" />
-    </Preference>
+    </Preference-->
 
-    <Preference
+    <!--Preference
         android:key="quick_settings_tiles"
         android:title="@string/quick_settings_developer_tiles">
         <intent
             android:targetPackage="com.android.settings"
             android:targetClass="com.android.settings.qstile.DevelopmentTileConfigActivity" />
-    </Preference>
+    </Preference-->
 
     <PreferenceCategory android:key="debug_debugging_category"
             android:title="@string/debug_debugging_category">
@@ -273,19 +274,19 @@
             android:title="@string/force_rtl_layout_all_locales"
             android:summary="@string/force_rtl_layout_all_locales_summary"/>
 
-        <ListPreference
+        <com.android.settings.AnimationScalePreference
             android:key="window_animation_scale"
             android:title="@string/window_animation_scale_title"
             android:entries="@array/window_animation_scale_entries"
             android:entryValues="@array/window_animation_scale_values" />
 
-        <ListPreference
+        <com.android.settings.AnimationScalePreference
             android:key="transition_animation_scale"
             android:title="@string/transition_animation_scale_title"
             android:entries="@array/transition_animation_scale_entries"
             android:entryValues="@array/transition_animation_scale_values" />
 
-        <ListPreference
+        <com.android.settings.AnimationScalePreference
             android:key="animator_duration_scale"
             android:title="@string/animator_duration_scale_title"
             android:entries="@array/animator_duration_scale_entries"

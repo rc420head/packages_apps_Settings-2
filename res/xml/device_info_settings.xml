@@ -17,11 +17,17 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
-        <!-- AQUARIOS About logo -->
-        <PreferenceScreen
-                android:key="aquarios_about"
-                android:enabled="false"
-                android:layout="@layout/aquarios_about" />
+        <!--AquariOS header -->
+        <PreferenceScreen android:key="aquarios_header"
+              android:enabled="false"
+              android:layout="@layout/aquarios_header_about" />
+
+        <!-- Changelog -->
+        <Preference
+                android:key="changelog"
+                android:title="@string/changelog_title"
+                android:summary="@string/changelog_summary"
+                android:fragment="com.android.settings.aquarios.Changelog" />
 
         <!-- System update settings - launches activity -->
         <Preference android:key="additional_system_update_settings"
@@ -45,16 +51,16 @@
         </Preference>
 
         <!-- Legal Information -->
-        <Preference
+        <!--Preference
                 android:key="legal_container"
                 android:title="@string/legal_information"
-                android:fragment="com.android.settings.LegalSettings" />
+                android:fragment="com.android.settings.LegalSettings" /-->
 
-        <Preference
+        <!--Preference
                 android:key="regulatory_info"
                 android:title="@string/regulatory_labels">
             <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
-        </Preference>
+        </Preference-->
 
         <Preference
                 android:key="safety_info"

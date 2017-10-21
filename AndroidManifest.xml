@@ -370,7 +370,6 @@
         <activity android:name="Settings$ApnSettingsActivity"
                 android:label="@string/apn_settings"
                 android:launchMode="singleTask"
-                android:taskAffinity="com.android.settings"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:parentActivityName="Settings$NetworkDashboardActivity"
                 android:process="com.android.phone">
@@ -2291,7 +2290,7 @@
                   android:launchMode="singleTop"
                   android:excludeFromRecents="true"
                   android:theme="@style/Theme.CryptKeeper"
-                  android:configChanges="mnc|mcc|keyboard|keyboardHidden|uiMode"
+                  android:configChanges="mnc|mcc|keyboard|keyboardHidden|uiMode|touchscreen"
                   android:windowSoftInputMode="adjustResize"
                   android:screenOrientation="nosensor"
                   android:process=":CryptKeeper">
