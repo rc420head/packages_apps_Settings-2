@@ -283,10 +283,10 @@ public class DashboardSummary extends InstrumentedFragment
         List<DashboardCategory> categories = new ArrayList<>();
         categories.add(mDashboardFeatureProvider.getTilesForCategory(
                 CategoryKey.CATEGORY_HOMEPAGE));
-        if (suggestions != null) {
+        /*if (suggestions != null) {
             mAdapter.setCategoriesAndSuggestions(categories, suggestions);
-        } else {
+        } else {*/
             mAdapter.setCategory(categories);
-        }
+        //}
     }
 }
