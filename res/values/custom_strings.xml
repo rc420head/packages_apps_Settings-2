@@ -104,4 +104,7 @@
     <string name="value_equals_default">auto</string>
     <string name="show_light_on_zen_title">Blink during Do-Not-Disturb mode</string>
 
+    <!-- Wake on Plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
 </resources>
