@@ -23,6 +23,8 @@
     <color name="expanded_button_color_close">#F44336</color>
 
     <!-- Changelog Colors -->
-    <color name="changelog_title_color">@*android:color/accent_material_dark</color>
+    <color name="changelog_title_color">@*android:color/aqua_blue_default</color>
+
+    <color name="aqua_blue_default">@*android:color/material_pixel_blue_bright</color>
 
 </resources>
