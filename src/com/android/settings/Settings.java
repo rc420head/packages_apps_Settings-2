@@ -195,4 +195,8 @@ public class Settings extends SettingsActivity {
 	// Custom Settings Categories
     public static class RootManagementActivity extends SettingsActivity { /* empty */ }
     public static class CoralReefActivity extends SettingsActivity { /* empty */ }
+    public static class NavigationSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class FlingSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class SmartbarSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class PulseSettingsActivity extends SettingsActivity { /* empty */ }
 }
