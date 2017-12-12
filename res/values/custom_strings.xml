@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-* Copyright (C) 2017 AquariOS
+* Copyright (C) 2017 The halogenOS Project
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,8 +21,8 @@
  <!-- Aquarios Customization Settings -->    
    <!-- Dashboard -->
     <string name="header_category_aquarios">Aquatic Treasures</string>
-    <string name="aquarios_coralreef_title">Coral Reef</string>
-    <string name="aquarios_coralreef_summary">Dive into the aquatic life</string>
+    <string name="coralreef_title">Coral Reef</string>
+    <string name="coralreef_summary">Dive into the aquatic life</string>
 
     <string name="show_dev_already_enabled">No need. Developer options is already enabled.</string>
 
