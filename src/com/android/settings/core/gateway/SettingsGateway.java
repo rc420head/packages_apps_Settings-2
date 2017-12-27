@@ -53,6 +53,7 @@ import com.android.settings.applications.PictureInPictureSettings;
 import com.android.settings.applications.ProcessStatsSummary;
 import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.applications.SpecialAccessSettings;
+import com.android.settings.applications.RunningServices;
 import com.android.settings.applications.UsageAccessDetails;
 import com.android.settings.applications.VrListenerSettings;
 import com.android.settings.applications.WriteSettingsDetails;
@@ -132,10 +133,10 @@ import com.android.settings.wifi.WifiInfo;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.aquarios.coralreef.CoralReef;
-import com.aquarios.coralreef.FlingSettings;
-import com.aquarios.coralreef.NavbarSettings;
-import com.aquarios.coralreef.PulseSettings;
-import com.aquarios.coralreef.SmartbarSettings;
+import com.aquarios.coralreef.fragments.FlingSettings;
+import com.aquarios.coralreef.fragments.NavigationBar;
+import com.aquarios.coralreef.fragments.PulseSettings;
+import com.aquarios.coralreef.fragments.SmartbarSettings;
 
 public class SettingsGateway {
 
@@ -258,8 +259,9 @@ public class SettingsGateway {
             LockscreenDashboardFragment.class.getName(),
             BluetoothDeviceDetailsFragment.class.getName(),
             DataUsageList.class.getName(),
+            RunningServices.class.getName(),
             CoralReef.class.getName(),
-            NavbarSettings.class.getName(),
+            NavigationBar.class.getName(),
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
             PulseSettings.class.getName(),
@@ -305,5 +307,6 @@ public class SettingsGateway {
             Settings.FlingSettingsActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),
             Settings.PulseSettingsActivity.class.getName(),
+            Settings.DevRunningServicesActivity.class.getName(),
     };
 }
