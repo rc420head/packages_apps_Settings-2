@@ -129,10 +129,18 @@
         android:title="@string/tap_to_wake"
         android:summary="@string/tap_to_wake_summary" />
 
-    <ListPreference
-        android:key="theme"
-        android:title="@string/color_theme"
-        android:summary="@string/summary_placeholder" />
+    <Preference
+        android:key="vr_display_pref"
+        android:title="@string/display_vr_pref_title"
+        android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
+
+    <PreferenceCategory
+        android:key="theme_category"
+        android:title="@string/theme_category_title">
+
+    <Preference
+        android:key="accent_picker"
+        android:title="@string/theme_accent_picker_title" />
 
     <ListPreference
         android:key="systemui_theme"
@@ -141,9 +149,6 @@
         android:entryValues="@array/systemui_theme_values"
         settings:controller="com.android.settings.display.SystemUiThemePreferenceController" />
 
-    <Preference
-        android:key="vr_display_pref"
-        android:title="@string/display_vr_pref_title"
-        android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
+    </PreferenceCategory>
 
 </PreferenceScreen>
