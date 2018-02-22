@@ -134,6 +134,7 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.aquarios.coralreef.CoralReef;
 import com.aquarios.coralreef.fragments.FlingSettings;
+import com.aquarios.coralreef.fragments.Miscellaneous;
 import com.aquarios.coralreef.fragments.NavigationBar;
 import com.aquarios.coralreef.fragments.PulseSettings;
 import com.aquarios.coralreef.fragments.SmartbarSettings;
@@ -261,6 +262,7 @@ public class SettingsGateway {
             DataUsageList.class.getName(),
             RunningServices.class.getName(),
             CoralReef.class.getName(),
+            Miscellaneous.class.getName(),
             NavigationBar.class.getName(),
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
@@ -303,6 +305,7 @@ public class SettingsGateway {
             Settings.DeviceInfoSettingsActivity.class.getName(),
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.CoralReefActivity.class.getName(),
+            Settings.MiscellaneousSettingsActivity.class.getName(),
             Settings.NavigationSettingsActivity.class.getName(),
             Settings.FlingSettingsActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),

@@ -166,5 +166,17 @@
                 android:value="true" />
         </activity>
 
+        <!-- Miscellaneous -->
+        <activity android:name="Settings$MiscellaneousSettingsActivity"
+                android:label="@string/miscellaneous_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.aquarios.coralreef.fragments.Miscellaneous" />
+        </activity>
+
     </application>
 </manifest>
