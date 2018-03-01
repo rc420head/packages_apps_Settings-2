@@ -284,4 +284,7 @@
     <string name="fingerprint_swipe_to_dismiss_suggestion_title">Dismiss notifications quickly</string>
     <!-- [CHAR LIMIT=60] -->
     <string name="fingerprint_swipe_to_dismiss_suggestion_summary">Swipe left or right on the fingerprint sensor</string>
+
+    <!-- Font picker -->
+    <string name="font_picker_title">Font</string>
 </resources>
