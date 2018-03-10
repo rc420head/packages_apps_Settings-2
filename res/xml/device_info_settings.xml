@@ -80,6 +80,12 @@
                         android:data="https://source.android.com/security/bulletin/" />
         </Preference>
 
+        <!-- AquariOS build date -->
+        <Preference
+                android:key="aqua_build_date"
+                android:title="@string/aqua_build_date"
+                android:summary="@string/aqua_build_date_default"/>
+
         <!-- Device FCC equipment id -->
         <Preference
                 android:key="fcc_equipment_id"
