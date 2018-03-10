@@ -71,10 +71,6 @@
     <string name="ambient_doze_auto_brightness_title">Ambient and LiftToWake auto brightness</string>
     <string name="ambient_doze_auto_brightness_summary">Use last screen-on adaptive brightness value for Ambient Display or Lift to Wake screen</string>
 
-    <!-- AquariOS version in About phone -->
-    <string name="aquarios_version">AquariOS build version</string>
-    <string name="aquarios_version_default">Unknown</string>
-
     <!-- Custom light color -->
     <string name="light_customization">Led light notification</string>
     <string name="custom_light_title">Light color</string>

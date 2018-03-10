@@ -80,12 +80,6 @@
                         android:data="https://source.android.com/security/bulletin/" />
         </Preference>
 
-        <!-- ROM Version -->
-        <Preference
-                android:key="aquarios_version"
-                android:title="@string/aquarios_version"
-                android:summary="@string/aquarios_version_default"/>
-
         <!-- Device FCC equipment id -->
         <Preference
                 android:key="fcc_equipment_id"
