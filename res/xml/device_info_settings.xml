@@ -18,9 +18,12 @@
         android:title="@string/about_settings">
 
         <!--AquariOS header -->
-        <PreferenceScreen android:key="aquarios_header"
-              android:enabled="false"
-              android:layout="@layout/aquarios_header_about" />
+        <Preference android:key="aquarios_header"
+              android:layout="@layout/aquarios_header_about">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://github.com/aquarios" />
+		</Preference>
 
         <!-- System update settings - launches activity -->
         <Preference android:key="additional_system_update_settings"
