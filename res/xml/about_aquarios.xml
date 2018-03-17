@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2018 AquariOS
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        android:key="about_aquarios"
+        android:title="@string/about_aquarios_screen_title">
+
+        <com.android.settings.applications.LayoutPreference
+            android:key="about_aquarios"
+            android:layout="@layout/about_aquarios" />
+
+		<PreferenceScreen
+			android:title="@string/aquarios_googleplus_title"
+			android:summary="@string/aquarios_googleplus_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://plus.google.com/communities/102431925733881544384" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_telegram_title"
+			android:summary="@string/aquarios_telegram_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://t.me/TheAgeOfAquariOS" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_github_title"
+			android:summary="@string/aquarios_github_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://github.com/AquariOS" />
+		</PreferenceScreen>
+
+    <!-- Developers -->
+	<PreferenceCategory
+		android:title="@string/aquarios_about_devs_category">
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_caleb_title"
+			android:summary="@string/aquarios_about_caleb_summary">
+		<intent
+				android:action="android.intent.action.VIEW"
+        android:data="https://forum.xda-developers.com/member.php?u=5349944" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_dennis_title"
+			android:summary="@string/aquarios_about_dennis_summary" >
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=5066258" />
+		</PreferenceScreen>
+    </PreferenceCategory>
+
+	<PreferenceCategory
+			android:title="@string/aquarios_about_contributors_category">
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_fezzy_title"
+			android:summary="@string/aquarios_about_fezzy_summary">
+		<intent
+				android:action="android.intent.action.VIEW"
+        android:data="https://forum.xda-developers.com/member.php?u=3199956" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_roger_title"
+			android:summary="@string/aquarios_about_roger_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://plus.google.com/115954542765514252805" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_popo_title"
+			android:summary="@string/aquarios_about_popo_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=6881531" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_mike_title"
+			android:summary="@string/aquarios_about_mike_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=2968294" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_matthew_title"
+			android:summary="@string/aquarios_about_matthew_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=5169465" />
+		</PreferenceScreen>
+
+    </PreferenceCategory>
+
+	<PreferenceCategory
+			android:title="@string/aquarios_about_testers_category">
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_chris_title"
+			android:summary="@string/aquarios_about_chris_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=2282448" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_ozz_title"
+			android:summary="@string/aquarios_about_ozz_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=5057789" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_haze_title"
+			android:summary="@string/aquarios_about_haze_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=7231934" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_tcat_title"
+			android:summary="@string/aquarios_about_tcat_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=4158306" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_doc_title"
+			android:summary="@string/aquarios_about_doc_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=902739" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_bryant_title"
+			android:summary="@string/aquarios_about_bryant_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=???????" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_marcus_title"
+			android:summary="@string/aquarios_about_marcus_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=5144438" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_lawlrus_title"
+			android:summary="@string/aquarios_about_lawlrus_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=5559940" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_patz_title"
+			android:summary="@string/aquarios_about_patz_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=5057789" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_derrick_title"
+			android:summary="@string/aquarios_about_derrick_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=5111123" />
+		</PreferenceScreen>
+
+    </PreferenceCategory>
+
+	<PreferenceCategory
+			android:title="@string/aquarios_about_emotional_category">
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_jalen_title"
+			android:summary="@string/aquarios_about_jalen_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=4678269" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_bob_title"
+			android:summary="@string/aquarios_about_bob_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=4845974" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/aquarios_about_adam_title"
+			android:summary="@string/aquarios_about_adam_summary">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://forum.xda-developers.com/member.php?u=4429707" />
+		</PreferenceScreen>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

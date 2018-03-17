@@ -86,6 +86,13 @@
                 android:title="@string/aqua_build_date"
                 android:summary="@string/aqua_build_date_default"/>
 
+        <!-- About AquariOS -->
+        <Preference
+                android:key="about_aquarios"
+                android:title="@string/about_aquarios_screen_title"
+                android:summary="@string/about_aquarios_title"
+		        android:fragment="com.android.settings.aquarios.AboutAquarios" />
+
         <!-- Device FCC equipment id -->
         <Preference
                 android:key="fcc_equipment_id"

@@ -26,6 +26,63 @@
 
     <string name="show_dev_already_enabled">No need. Developer options is already enabled.</string>
 
+    <!-- About AquariOS -->
+    <string name="about_aquarios_screen_title">About AquariOS</string>
+    <string name="about_aquarios_title">Who we are and how it all started...</string>
+    <string name="aquarios_about_summary">AquariOS was started by me, calebcabob, at the tail end of 2016 and was motivated not only by wanting to learn more about custom Android ROM development from the ground up (thanks @fwhem), but also so I could create a ROM to my personal liking - I was tired of requesting features to other developers. When this project started, it was intended to be for Nexus/Pixel devices only. Along came Dennis (rc420head/Aquacafking), who was ready for a change, liked what he saw here, and wanted to try bringing AquariOS over to non-Google devices. Having worked together in the past, sharing the same ambitions and vision (not to mention the friendship developed along the way), it was an easy choice to team up. This is when CAF was born for AquariOS. Dennis and I have had a blast while doing this (which is the whole point here) and I believe this is why AquariOS has lured in such a fine group of testers, users, and other contributors along the way!</string>
+    <string name="aquarios_github_title">Github</string>
+    <string name="aquarios_github_summary">Where the main source code for AquariOS is located</string>
+    <string name="aquarios_googleplus_title">Our Google+</string>
+    <string name="aquarios_googleplus_summary">Come on over and follow us there!</string>
+    <string name="aquarios_telegram_title">Our Telegram group</string>
+    <string name="aquarios_telegram_summary">This public group is the place to find the latest stable builds</string>
+    <string name="aquarios_about_devs_category">Lead devs</string>
+    <string name="aquarios_about_caleb_title">Caleb (aka Calebcabob, aka DJ Calphonic)</string>
+    <string name="aquarios_about_caleb_summary">Lead developer of AquariOS. Builds for Pixel 2XL and Nexus 6P</string>
+    <string name="aquarios_about_dennis_title">Dennis (aka rc420head, aka Aquacafking)</string>
+    <string name="aquarios_about_dennis_summary">Heads up CAF side of things (making it all smooth and possible). Builds for Oneplus3/3T and LG devices. Often helps Calebcabob to keep shit simple :P</string>
+    <string name="aquarios_about_contributors_category">Other contributors</string>
+    <string name="aquarios_about_fezzy_title">John Fesler (aka Fezzy102)</string>
+    <string name="aquarios_about_fezzy_summary">Builds for OnePlus5/5T. Helps with bringing some features/fixes into the ROM as well.</string>
+    <string name="aquarios_about_roger_title">Roger Truttman (aka Roger.T)</string>
+    <string name="aquarios_about_roger_summary">The man to thank for our amazing boot animation, some icons, and his many, many wallpapers! He has a LOT to offer - all while completely ignoring the natural need for sleep. Hopefully he stays put;)</string>
+    <string name="aquarios_about_popo_title">Louis (aka popogijo)</string>
+    <string name="aquarios_about_popo_summary">Maintainer for Nexus 5X. A great tester. Also a man of much patience! ;)</string>
+    <string name="aquarios_about_mike_title">MikereDD</string>
+    <string name="aquarios_about_mike_summary">Builds for Nexus 6. Also a man of thick sarcasm and aged whiskey!</string>
+    <string name="aquarios_about_matthew_title">Matthew (aka DespairFactor)</string>
+    <string name="aquarios_about_matthew_summary">He devs for his own personal kernel, Snoke, but had done a TON of kernel work for us on our 8.0 base. For that, we are grateful, and hope he will consider doing the same on our current base soon! ;)</string>
+    <string name="aquarios_about_testers_category">Testers</string>
+    <string name="aquarios_about_chris_title">Chris (aka biron_w)</string>
+    <string name="aquarios_about_chris_summary">One of the original and very helful testers! One of our thread/chat bouncers. This one\'s a keeper!</string>
+    <string name="aquarios_about_ozz_title">Ozz (aka p70shooter)</string>
+    <string name="aquarios_about_ozz_summary">Another great tester, and one of the originals. A bouncer in our chats/threads. Fair warning - DON\'T get on his bad side!</string>
+    <string name="aquarios_about_haze_title">Haze (aka s8ntshaz3)</string>
+    <string name="aquarios_about_haze_summary">An ambitious tester, with consistency and willingness to flash anything we throw at him! I think he just likes finding my fuck-ups!</string>
+    <string name="aquarios_about_tcat_title">tcat (aka Tom)</string>
+    <string name="aquarios_about_tcat_summary">Respectfully, he\'s like the /'cool grandpa/' of the bunch. A fine tester with an appreciation for the aqua life :)</string>
+    <string name="aquarios_about_doc_title">Da Doc</string>
+    <string name="aquarios_about_doc_summary">A motivated tester with a lot to offer. His motivation and willingness to help is truly appreciated! Brought in by @fezzy102, we hope he sticks around!</string>
+    <string name="aquarios_about_bryant_title">Bryant</string>
+    <string name="aquarios_about_bryant_summary">Eager to learn, this tester is running his own builds, and has a desire to contribute to our source code. His motivation to help out is much appreciated </string>
+    <string name="aquarios_about_lawlrus_title">Lawlrus</string>
+    <string name="aquarios_about_lawlrus_summary">A fine tester who has been part of the Android community nearly since the beginning. Don\'t let his ruthless sarcasm fool ya, he is a good man! </string>
+    <string name="aquarios_about_patz_title">patz</string>
+    <string name="aquarios_about_patz_summary">A tester for angler, who has been extremely helpful in many ways. His efforts and humor are much appreciated ;) </string>
+    <string name="aquarios_about_derrick_title">Derrick</string>
+    <string name="aquarios_about_derrick_summary">A tester who has been with us for a little while. His efforts are much appreciated!</string>
+    <string name="aquarios_about_rav_title">Ravi Jain</string>
+    <string name="aquarios_about_rav_summary">An OP5 tester whos is ready for anything. We're glad to have him on board!</string>
+    <string name="aquarios_about_marcus_title">Marcus (aka kheltek)</string>
+    <string name="aquarios_about_marcus_summary">A taimen tester with great techniques in order to ensure thorough testing. Glad this man is here!</string>
+    <string name="aquarios_about_emotional_category">Emotional supporters</string>
+    <string name="aquarios_about_jalen_title">Jalen (aka Flashalot)</string>
+    <string name="aquarios_about_jalen_summary">He\'s been in the corner of Dennis and mine since the beginning. How can ya not love this dude?!</string>
+    <string name="aquarios_about_bob_title">Bob (aka Thisismyringtone)</string>
+    <string name="aquarios_about_bob_summary">A pme tester who really wishes our 8.1 builds were ready for his greatness ;)</string>
+    <string name="aquarios_about_adam_title">Adam</string>
+    <string name="aquarios_about_adam_summary">Another pme tester who was mainly active in our previous bases, but is still around and ready for anything :)</string>
+
    <!-- Keyboard: Force Show ENTER key -->
     <string name="force_show_enter_key_title">Always show ENTER key</string>
     <string name="force_show_enter_key_summary">Forces ENTER key to be displayed, rather than Emoji key</string>
