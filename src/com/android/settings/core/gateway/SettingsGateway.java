@@ -139,6 +139,7 @@ import com.aquarios.coralreef.fragments.Miscellaneous;
 import com.aquarios.coralreef.fragments.NavigationBar;
 import com.aquarios.coralreef.fragments.PulseSettings;
 import com.aquarios.coralreef.fragments.SmartbarSettings;
+import com.aquarios.coralreef.fragments.SmartPixels;
 
 public class SettingsGateway {
 
@@ -269,6 +270,7 @@ public class SettingsGateway {
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
             PulseSettings.class.getName(),
+            SmartPixels.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -313,5 +315,6 @@ public class SettingsGateway {
             Settings.SmartbarSettingsActivity.class.getName(),
             Settings.PulseSettingsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName(),
     };
 }
