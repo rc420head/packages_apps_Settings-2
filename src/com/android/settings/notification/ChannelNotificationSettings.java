@@ -265,7 +265,7 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
         int defaultLightColor = getResources().getColor(com.android.internal.R.color.config_defaultNotificationColor);
         mCustomLight.setDefaultColor(defaultLightColor);
         mLedColor = (mChannel.getLightColor() != 0 ? mChannel.getLightColor() : defaultLightColor);
-        mCustomLight.setAlphaSliderEnabled(false);
+        mCustomLight.setAlphaSliderEnabled(true);
         mCustomLight.setNewPreviewColor(mLedColor);
         mCustomLight.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
