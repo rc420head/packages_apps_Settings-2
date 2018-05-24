@@ -128,15 +128,6 @@
     <string name="aqua_build_date">AquariOS build date</string>
     <string name="aqua_build_date_default">unknown</string>
 
-    <!-- Custom light color -->
-    <string name="light_customization">Led light notification</string>
-    <string name="custom_light_title">Light color</string>
-    <string name="custom_light_on_time_title">"Light ON time during led pulse (ms)"</string>
-    <string name="custom_light_off_time_title">"Light OFF time during led pulse (ms)"</string>
-    <string name="app_notifications_info_desc">Tap on one of above channels to configure their light colors and other options</string>
-    <string name="value_equals_default">Def</string>
-    <string name="show_light_on_zen_title">Blink during Do Not Disturb</string>
-
     <string name="background_processes_settings_title">Background processes</string>
 
     <!-- Vibrate on plug -->
@@ -291,4 +282,5 @@
     <!-- Connected AP Signal Preference -->
     <string name="connected_signal_pref_title">Signal strength: %1$s</string>
     <string name="connected_signal_pref_summary">Tap for more info</string>
+
 </resources>
