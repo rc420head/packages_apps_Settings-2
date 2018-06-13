@@ -133,13 +133,32 @@ import com.android.settings.wifi.WifiAPITest;
 import com.android.settings.wifi.WifiInfo;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
+
 import com.aquarios.coralreef.CoralReef;
+import com.aquarios.coralreef.fragments.BatteryBar;
+import com.aquarios.coralreef.fragments.BatteryLightSettings;
+import com.aquarios.coralreef.fragments.BatteryOptions;
+import com.aquarios.coralreef.fragments.Changelog;
+import com.aquarios.coralreef.fragments.ClockOptions;
+import com.aquarios.coralreef.fragments.DisplayOptions;
+import com.aquarios.coralreef.fragments.ExpandedDesktop;
 import com.aquarios.coralreef.fragments.FlingSettings;
+import com.aquarios.coralreef.fragments.GestureOptions;
+import com.aquarios.coralreef.fragments.HeadsUp;
+import com.aquarios.coralreef.fragments.LedNotifications;
+import com.aquarios.coralreef.fragments.LockScreenWeather;
 import com.aquarios.coralreef.fragments.Miscellaneous;
 import com.aquarios.coralreef.fragments.NavigationBar;
+import com.aquarios.coralreef.fragments.NotificationLightSettings;
+import com.aquarios.coralreef.fragments.PowerMenu;
 import com.aquarios.coralreef.fragments.PulseSettings;
+import com.aquarios.coralreef.fragments.QuickSettings;
+import com.aquarios.coralreef.fragments.Recents;
 import com.aquarios.coralreef.fragments.SmartbarSettings;
 import com.aquarios.coralreef.fragments.SmartPixels;
+import com.aquarios.coralreef.fragments.StatusBarWeather;
+import com.aquarios.coralreef.fragments.TrafficIndicators;
+import com.aquarios.coralreef.fragments.VolumeRocker;
 
 public class SettingsGateway {
 
@@ -265,12 +284,30 @@ public class SettingsGateway {
             DataUsageList.class.getName(),
             RunningServices.class.getName(),
             CoralReef.class.getName(),
+            BatteryBar.class.getName(),
+            BatteryLightSettings.class.getName(),
+            BatteryOptions.class.getName(),
+            Changelog.class.getName(),
+            ClockOptions.class.getName(),
+            DisplayOptions.class.getName(),
+            ExpandedDesktop.class.getName(),
+            FlingSettings.class.getName(),
+            GestureOptions.class.getName(),
+            HeadsUp.class.getName(),
+            LedNotifications.class.getName(),
+            LockScreenWeather.class.getName(),
             Miscellaneous.class.getName(),
             NavigationBar.class.getName(),
-            FlingSettings.class.getName(),
-            SmartbarSettings.class.getName(),
+            NotificationLightSettings.class.getName(),
+            PowerMenu.class.getName(),
             PulseSettings.class.getName(),
+            QuickSettings.class.getName(),
+            Recents.class.getName(),
+            SmartbarSettings.class.getName(),
             SmartPixels.class.getName(),
+            StatusBarWeather.class.getName(),
+            TrafficIndicators.class.getName(),
+            VolumeRocker.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -310,12 +347,30 @@ public class SettingsGateway {
             Settings.DeviceInfoSettingsActivity.class.getName(),
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.CoralReefActivity.class.getName(),
-            Settings.MiscellaneousSettingsActivity.class.getName(),
-            Settings.NavigationSettingsActivity.class.getName(),
-            Settings.FlingSettingsActivity.class.getName(),
-            Settings.SmartbarSettingsActivity.class.getName(),
-            Settings.PulseSettingsActivity.class.getName(),
+            Settings.BatteryBarActivity.class.getName(),
+            Settings.BatteryLightSettingsActivity.class.getName(),
+            Settings.BatteryOptionsActivity.class.getName(),
+            Settings.ChangelogActivity.class.getName(),
+            Settings.ClockOptionsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
+            Settings.DisplayOptionsActivity.class.getName(),
+            Settings.ExpandedDesktopActivity.class.getName(),
+            Settings.FlingSettingsActivity.class.getName(),
+            Settings.GestureOptionsActivity.class.getName(),
+            Settings.HeadsUpActivity.class.getName(),
+            Settings.LedNotificationsActivity.class.getName(),
+            Settings.LockScreenWeatherActivity.class.getName(),
+            Settings.MiscellaneousActivity.class.getName(),
+            Settings.NavigationBarActivity.class.getName(),
+            Settings.NotificationLightSettingsActivity.class.getName(),
+            Settings.PowerMenuActivity.class.getName(),
+            Settings.PulseSettingsActivity.class.getName(),
+            Settings.QuickSettingsActivity.class.getName(),
+            Settings.RecentsActivity.class.getName(),
+            Settings.SmartbarSettingsActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
+            Settings.StatusBarWeatherActivity.class.getName(),
+            Settings.TrafficIndicatorsActivity.class.getName(),
+            Settings.VolumeRockerActivity.class.getName()
     };
 }

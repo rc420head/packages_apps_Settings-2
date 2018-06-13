@@ -195,13 +195,31 @@ public class Settings extends SettingsActivity {
     public static class SystemDashboardActivity extends SettingsActivity {}
 
 	// Custom Settings Categories
-    public static class RootManagementActivity extends SettingsActivity { /* empty */ }
+    public static class BatteryBarActivity extends SettingsActivity { /* empty */ }
+    public static class BatteryLightSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class BatteryOptionsActivity extends SettingsActivity { /* empty */ }
+    public static class ChangelogActivity extends SettingsActivity { /* empty */ }
+    public static class ClockOptionsActivity extends SettingsActivity { /* empty */ }
     public static class CoralReefActivity extends SettingsActivity { /* empty */ }
-    public static class MiscellaneousSettingsActivity extends SettingsActivity { /* empty */ }
-    public static class NavigationSettingsActivity extends SettingsActivity { /* empty */ }
-    public static class FlingSettingsActivity extends SettingsActivity { /* empty */ }
-    public static class SmartbarSettingsActivity extends SettingsActivity { /* empty */ }
-    public static class PulseSettingsActivity extends SettingsActivity { /* empty */ }
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
+    public static class DisplayOptionsActivity extends SettingsActivity { /* empty */ }
+    public static class ExpandedDesktopActivity extends SettingsActivity { /* empty */ }
+    public static class FlingSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class GestureOptionsActivity extends SettingsActivity { /* empty */ }
+    public static class HeadsUpActivity extends SettingsActivity { /* empty */ }
+    public static class LedNotificationsActivity extends SettingsActivity { /* empty */ }
+    public static class LockScreenWeatherActivity extends SettingsActivity { /* empty */ }
+    public static class MiscellaneousActivity extends SettingsActivity { /* empty */ }
+    public static class NavigationBarActivity extends SettingsActivity { /* empty */ }
+    public static class NotificationLightSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class PowerMenuActivity extends SettingsActivity { /* empty */ }
+    public static class PulseSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class QuickSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class RecentsActivity extends SettingsActivity { /* empty */ }
+    public static class RootManagementActivity extends SettingsActivity { /* empty */ }
+    public static class SmartbarSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SmartPixelsActivity extends SettingsActivity { /* empty */ }
+    public static class StatusBarWeatherActivity extends SettingsActivity { /* empty */ }
+    public static class TrafficIndicatorsActivity extends SettingsActivity { /* empty */ }
+    public static class VolumeRockerActivity extends SettingsActivity { /* empty */ }
 }
