@@ -292,4 +292,6 @@
     <!-- Volume settings - Volume adjustment sound -->
     <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
 
+    <!-- custom ambiant display -->
+    <string name="ambient_display_custom_screen_title">Custom Device Settings</string>
 </resources>
