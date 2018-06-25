@@ -143,11 +143,11 @@
           android:title="@string/screen_locking_sounds_title"
           android:defaultValue="false" />
 
-        <!-- Charging sounds -->
+        <!-- Charging sounds
         <SwitchPreference
           android:key="charging_sounds"
           android:title="@string/charging_sounds_title"
-          android:defaultValue="false" />
+          android:defaultValue="false" /> -->
 
         <!-- Docking sounds -->
         <SwitchPreference
