@@ -156,7 +156,6 @@ import com.aquarios.coralreef.fragments.QuickSettings;
 import com.aquarios.coralreef.fragments.Recents;
 import com.aquarios.coralreef.fragments.SmartbarSettings;
 import com.aquarios.coralreef.fragments.SmartPixels;
-import com.aquarios.coralreef.fragments.StatusBarWeather;
 import com.aquarios.coralreef.fragments.TrafficIndicators;
 import com.aquarios.coralreef.fragments.VolumeRocker;
 
@@ -305,7 +304,6 @@ public class SettingsGateway {
             Recents.class.getName(),
             SmartbarSettings.class.getName(),
             SmartPixels.class.getName(),
-            StatusBarWeather.class.getName(),
             TrafficIndicators.class.getName(),
             VolumeRocker.class.getName(),
     };
@@ -369,7 +367,6 @@ public class SettingsGateway {
             Settings.RecentsActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
-            Settings.StatusBarWeatherActivity.class.getName(),
             Settings.TrafficIndicatorsActivity.class.getName(),
             Settings.VolumeRockerActivity.class.getName()
     };

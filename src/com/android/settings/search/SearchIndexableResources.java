@@ -86,7 +86,6 @@ import com.aquarios.coralreef.fragments.QuickSettings;
 import com.aquarios.coralreef.fragments.Recents;
 import com.aquarios.coralreef.fragments.SmartbarSettings;
 import com.aquarios.coralreef.fragments.SmartPixels;
-import com.aquarios.coralreef.fragments.StatusBarWeather;
 import com.aquarios.coralreef.fragments.TrafficIndicators;
 import com.aquarios.coralreef.fragments.VolumeRocker;
 

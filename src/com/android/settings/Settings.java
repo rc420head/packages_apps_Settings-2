@@ -219,7 +219,6 @@ public class Settings extends SettingsActivity {
     public static class RootManagementActivity extends SettingsActivity { /* empty */ }
     public static class SmartbarSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SmartPixelsActivity extends SettingsActivity { /* empty */ }
-    public static class StatusBarWeatherActivity extends SettingsActivity { /* empty */ }
     public static class TrafficIndicatorsActivity extends SettingsActivity { /* empty */ }
     public static class VolumeRockerActivity extends SettingsActivity { /* empty */ }
 }
