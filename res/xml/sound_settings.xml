@@ -52,7 +52,7 @@
                 android:key="volume_link_notification"
                 android:title="@string/link_volume_option_title"
                 android:persistent = "false"
-                android:defaultValue = "false" />
+                android:defaultValue = "true" />
 
         <!-- Also vibrate for calls -->
         <SwitchPreference
@@ -140,37 +140,22 @@
         <!-- Screen locking sounds -->
         <SwitchPreference
           android:key="screen_locking_sounds"
-          android:title="@string/screen_locking_sounds_title"
-          android:defaultValue="false" />
+          android:title="@string/screen_locking_sounds_title" />
 
-        <!-- Charging sounds
+        <!-- Charging sounds -->
         <SwitchPreference
           android:key="charging_sounds"
-          android:title="@string/charging_sounds_title"
-          android:defaultValue="false" /> -->
+          android:title="@string/charging_sounds_title" />
 
         <!-- Docking sounds -->
         <SwitchPreference
           android:key="docking_sounds"
           android:title="@string/docking_sounds_title" />
 
-        <!-- Screenshot sound -->
-        <com.aquarios.coralreef.preference.SystemSettingSwitchPreference
-          android:key="screenshot_sound"
-          android:title="@string/screenshot_sound_title"
-          android:defaultValue="false" />
-
-        <!-- Volume adjustment sounds -->
-        <SwitchPreference
-          android:key="volume_adjust_sounds"
-          android:title="@string/volume_adjust_sounds_title"
-          android:defaultValue="false" />
-
         <!-- Touch sounds -->
         <SwitchPreference
           android:key="touch_sounds"
-          android:title="@string/touch_sounds_title"
-          android:defaultValue="false" />
+          android:title="@string/touch_sounds_title" />
 
         <!-- Vibrate on touch -->
         <SwitchPreference

@@ -62,6 +62,21 @@
         <item>3</item>
     </string-array>
 
+     <!-- Charged battery alert -->
+    <string-array name="alert_on_charged_entries">
+        <item>@string/alert_on_charged_level_dis</item>
+        <item>@string/alert_on_charged_level_80</item>
+        <item>@string/alert_on_charged_level_90</item>
+        <item>@string/alert_on_charged_level_99</item>
+    </string-array>
+
+    <string-array name="alert_on_charged_level_values" translatable="false">
+        <item>-1</item>
+        <item>80</item>
+        <item>90</item>
+        <item>99</item>
+    </string-array>
+
     <!-- Volume step options. -->
     <string-array name="volume_steps_entries" translatable="false">
         <item>@string/volume_steps_60</item>
@@ -92,14 +107,12 @@
         <item>@string/systemui_theme_style_auto</item>
         <item>@string/systemui_theme_style_light</item>
         <item>@string/systemui_theme_style_dark</item>
-        <item>@string/systemui_theme_style_blackaf</item>
     </string-array>
 
     <string-array name="systemui_theme_style_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
-        <item>3</item>
     </string-array>
 
     <!-- Names of categories of app ops tabs -->

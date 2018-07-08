@@ -128,10 +128,26 @@
     <string name="aqua_build_date">AquariOS build date</string>
     <string name="aqua_build_date_default">unknown</string>
 
+    <!-- Custom light color -->
+    <string name="light_customization">Led light notification</string>
+    <string name="custom_light_title">Light color</string>
+    <string name="custom_light_on_time_title">"Light ON time during led pulse (ms)"</string>
+    <string name="custom_light_off_time_title">"Light OFF time during led pulse (ms)"</string>
+    <string name="app_notifications_info_desc">Tap on one of above channels to configure their light colors and other options</string>
+    <string name="value_equals_default">Def</string>
+    <string name="show_light_on_zen_title">Blink during Do Not Disturb</string>
+
     <string name="background_processes_settings_title">Background processes</string>
 
     <!-- Vibrate on plug -->
     <string name="vibration_on_charge_state_changed_title">Vibrate on plug</string>
+
+    <string name="alert_on_charged_level_title">Optimal charge level alert</string>
+    <string name="alert_on_charged_level_summary">Notify and play sound/vibrate on optimal charge level if screen is off since at least 1 min.\nNotification can be disabled separately long pressing on it.</string>
+    <string name="alert_on_charged_level_dis">Disabled</string>
+    <string name="alert_on_charged_level_80">"80%"</string>
+    <string name="alert_on_charged_level_90">"90%"</string>
+    <string name="alert_on_charged_level_99">"99%"</string>
 
     <!-- Unlink notification volume -->
     <string name="link_volume_option_title">Link ring and notification volume</string>
@@ -176,7 +192,6 @@
     <string name="systemui_theme_style_auto">Wallpaper based</string>
     <string name="systemui_theme_style_light">Light style</string>
     <string name="systemui_theme_style_dark">Dark style</string>
-    <string name="systemui_theme_style_blackaf">Black style</string>
     <string name="accent_picker_dialog_title">Select an accent color</string>
     <string name="theme_accent_picker_title">Accent color</string>
     <string name="theme_accent_picker_summary">Select system theme accent color</string>
@@ -272,15 +287,21 @@
 
     <!-- Font picker -->
     <string name="font_picker_title">Font</string>
+    
+    <!-- Security dialog -->
+    <string name="aosp_security_bulletin_url">https://source.android.com/security/bulletin/2018-04-01</string>
+    <string name="security_dialog_title">Security updates</string>
+    <string name="security_dialog_neutral_button">AOSP Security Bulletins</string>
+    <string name="android_security_title">AOSP security patch level</string>
+    <string name="android_security_summary">Android security updates are a collection of patches to the Android platform and the vendor binaries that help it run. Since these binaries are closed source, we have to rely on the vendors to supply them to the OEMs and the OEMs to ship them to users so we can add them to our builds. As we cannot control this process at all, we want to make it clear that we only update the security patch level in the repos that come from the Android Open Source Project. Generally, the vendor security patch level will be whatever patch level the latest stock ROM is on.</string>
+    <string name="android_functional_updates_title">Functional updates</string>
+    <string name="android_functional_updates_summary">In addition to AOSP security updates, we include Google\'s functional updates. These are patches that Google push in addition to security updates for Pixel devices to address functionality issues such as connectivity, stability, and performance. Since we support more than just Pixel devices, they are included for all our devices.</string>
+    <string name="vendor_security_title">Vendor patch level</string>
 
     <!-- Connected AP Signal Preference -->
     <string name="connected_signal_pref_title">Signal strength: %1$s</string>
     <string name="connected_signal_pref_summary">Tap for more info</string>
 
-    <!-- Screenshot sound -->
-    <string name="screenshot_sound_title">Screenshot sound</string>
-
-    <!-- Volume settings - Volume adjustment sound -->
-    <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
-
+    <!-- custom ambiant display -->
+    <string name="ambient_display_custom_screen_title">Custom Device Settings</string>
 </resources>
