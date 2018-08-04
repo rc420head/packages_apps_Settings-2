@@ -60,28 +60,6 @@ import com.android.settings.gestures.DoubleTapPowerSettings;
 import com.android.settings.gestures.DoubleTapScreenSettings;
 import com.android.settings.gestures.DoubleTwistGestureSettings;
 import com.android.settings.gestures.GestureSettings;
-import com.aquarios.coralreef.tabs.ButtonsTab;
-import com.aquarios.coralreef.tabs.LockScreenTab;
-import com.aquarios.coralreef.tabs.NotificationsTab;
-import com.aquarios.coralreef.tabs.StatusBarTab;
-import com.aquarios.coralreef.tabs.SystemMiscTab;
-import com.aquarios.coralreef.fragments.BatteryBar;
-import com.aquarios.coralreef.fragments.BatteryOptions;
-import com.aquarios.coralreef.fragments.Changelog;
-import com.aquarios.coralreef.fragments.ClockOptions;
-import com.aquarios.coralreef.fragments.DisplayOptions;
-import com.aquarios.coralreef.fragments.ExpandedDesktop;
-import com.aquarios.coralreef.fragments.GestureOptions;
-import com.aquarios.coralreef.fragments.HeadsUp;
-import com.aquarios.coralreef.fragments.LedNotifications;
-import com.aquarios.coralreef.fragments.LockScreenWeatherSettings;
-import com.aquarios.coralreef.fragments.NavigationBar;
-import com.aquarios.coralreef.fragments.PowerMenu;
-import com.aquarios.coralreef.fragments.QuickSettings;
-import com.aquarios.coralreef.fragments.Recents;
-import com.aquarios.coralreef.fragments.SmartbarSettings;
-import com.aquarios.coralreef.fragments.VolumeRocker;
-
 import com.android.settings.gestures.PickupGestureSettings;
 import com.android.settings.gestures.SwipeToNotificationSettings;
 import com.android.settings.inputmethod.AvailableVirtualKeyboardFragment;
@@ -110,6 +88,34 @@ import com.android.settings.wallpaper.WallpaperTypeSettings;
 import com.android.settings.wifi.ConfigureWifiSettings;
 import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
+
+// AquariOS search indexing
+import com.aquarios.coralreef.tabs.ButtonsTab;
+import com.aquarios.coralreef.tabs.LockScreenTab;
+import com.aquarios.coralreef.tabs.NotificationsTab;
+import com.aquarios.coralreef.tabs.StatusBarTab;
+import com.aquarios.coralreef.tabs.SystemMiscTab;
+import com.aquarios.coralreef.fragments.BatteryBar;
+import com.aquarios.coralreef.fragments.BatteryOptions;
+import com.aquarios.coralreef.fragments.ClockOptions;
+import com.aquarios.coralreef.fragments.DisplayOptions;
+import com.aquarios.coralreef.fragments.FlingSettings;
+import com.aquarios.coralreef.fragments.GestureOptions;
+import com.aquarios.coralreef.fragments.HeadsUp;
+import com.aquarios.coralreef.fragments.LedNotifications;
+import com.aquarios.coralreef.fragments.LockScreenWeather;
+import com.aquarios.coralreef.fragments.Miscellaneous;
+import com.aquarios.coralreef.fragments.NavigationBar;
+import com.aquarios.coralreef.fragments.OmniJaws;
+import com.aquarios.coralreef.fragments.PowerMenu;
+import com.aquarios.coralreef.fragments.PulseSettings;
+import com.aquarios.coralreef.fragments.QuickSettings;
+import com.aquarios.coralreef.fragments.Recents;
+import com.aquarios.coralreef.fragments.SmartbarSettings;
+import com.aquarios.coralreef.fragments.SmartPixels;
+import com.aquarios.coralreef.fragments.TrafficIndicators;
+import com.aquarios.coralreef.fragments.VolumeRocker;
+
 import java.util.Collection;
 import java.util.HashMap;
 
@@ -238,6 +244,33 @@ public final class SearchIndexableResources {
                 AutomaticStorageManagerSettings.class,
                 NO_DATA_RES_ID,
                 R.drawable.ic_settings_storage);
+
+        // AquariOS search indexing
+        addIndex(ButtonsTab.class, R.xml.buttons_tab, R.drawable.ic_settings_coralreef);
+        addIndex(LockScreenTab.class, R.xml.lock_screen_tab, R.drawable.ic_settings_coralreef);
+        addIndex(NotificationsTab.class, R.xml.notifications_tab, R.drawable.ic_settings_coralreef);
+        addIndex(StatusBarTab.class, R.xml.status_bar_tab, R.drawable.ic_settings_coralreef);
+        addIndex(SystemMiscTab.class, R.xml.system_misc_tab, R.drawable.ic_settings_coralreef);
+        addIndex(BatteryBar.class, R.xml.battery_bar, R.drawable.ic_settings_coralreef);
+        addIndex(BatteryOptions.class, R.xml.battery_options, R.drawable.ic_settings_coralreef);
+        addIndex(ClockOptions.class, R.xml.clock_options, R.drawable.ic_settings_coralreef);
+        addIndex(DisplayOptions.class, R.xml.display_options, R.drawable.ic_settings_coralreef);
+        addIndex(FlingSettings.class, R.xml.fling_settings, R.drawable.ic_settings_coralreef);
+        addIndex(GestureOptions.class, R.xml.gesture_options, R.drawable.ic_settings_coralreef);
+        addIndex(HeadsUp.class, R.xml.headsup, R.drawable.ic_settings_coralreef);
+        addIndex(LedNotifications.class, R.xml.led_notifications, R.drawable.ic_settings_coralreef);
+        addIndex(LockScreenWeather.class, R.xml.lock_screen_weather, R.drawable.ic_settings_coralreef);
+        addIndex(Miscellaneous.class, R.xml.miscellaneous, R.drawable.ic_settings_coralreef);
+        addIndex(NavigationBar.class, R.xml.navigation_bar, R.drawable.ic_settings_coralreef);
+        addIndex(OmniJaws.class, R.xml.omnijaws_settings, R.drawable.ic_settings_coralreef);
+        addIndex(PowerMenu.class, R.xml.powermenu, R.drawable.ic_settings_coralreef);
+        addIndex(PulseSettings.class, R.xml.pulse_settings, R.drawable.ic_settings_coralreef);
+        addIndex(QuickSettings.class, R.xml.quick_settings, R.drawable.ic_settings_coralreef);
+        addIndex(Recents.class, R.xml.recents, R.drawable.ic_settings_coralreef);
+        addIndex(SmartbarSettings.class, R.xml.smartbar_settings, R.drawable.ic_settings_coralreef);
+        addIndex(SmartPixels.class, R.xml.smart_pixels, R.drawable.ic_settings_coralreef);
+        addIndex(TrafficIndicators.class, R.xml.traffic_indicators, R.drawable.ic_settings_coralreef);
+        addIndex(VolumeRocker.class, R.xml.volume_rocker, R.drawable.ic_settings_coralreef);
     }
 
     private SearchIndexableResources() {
