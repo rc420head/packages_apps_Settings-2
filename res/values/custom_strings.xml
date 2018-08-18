@@ -141,4 +141,6 @@
     <string name="theme_applied_toast">Theme applied.</string>
     <string name="applying_theme_toast">Applying theme, please wait...</string>
 
+    <string name="gesture_double_tap_power_torch_toast">Screen off torch gesture is now disabled</string>
+
 </resources>
