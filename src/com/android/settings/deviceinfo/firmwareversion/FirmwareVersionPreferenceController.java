@@ -19,6 +19,7 @@ package com.android.settings.deviceinfo.firmwareversion;
 import android.app.Fragment;
 import android.content.Context;
 import android.os.Build;
+import android.os.SystemProperties;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.text.TextUtils;
@@ -49,8 +50,22 @@ public class FirmwareVersionPreferenceController extends AbstractPreferenceContr
         super.displayPreference(screen);
         final Preference pref = screen.findPreference(getPreferenceKey());
         if (pref != null) {
-            pref.setSummary(Build.VERSION.RELEASE);
+                StringBuilder sb = new StringBuilder();
+                sb.append(BidiFormatter.getInstance().unicodeWrap(Build.VERSION.RELEASE));
+                String aquaBuildDate = getAquaBuildDate();
+                if (!aquaBuildDate.equals("")){
+                    sb.append("\n");
+                    sb.append(aquaBuildDate);
+                }
+                preference.setSummary(sb.toString());
+                preference.setEnabled(true);
         }
+    }
+
+    private String getAquaBuildDate(){
+        String buildDate = SystemProperties.get("ro.build.date","");
+        String buildType = SystemProperties.get("ro.aquarios.type","");
+        return buildDate.equals("") ? "" : "AquariOS-" + buildDate + "-" + buildType;
     }
 
     @Override
