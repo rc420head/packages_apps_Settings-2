@@ -24,6 +24,7 @@ import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.support.annotation.VisibleForTesting;
+import android.text.BidiFormatter;
 import android.util.Log;
 import android.view.View;
 

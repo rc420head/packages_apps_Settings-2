@@ -22,6 +22,7 @@ import android.os.Build;
 import android.os.SystemProperties;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
+import android.text.BidiFormatter;
 import android.text.TextUtils;
 
 import com.android.settings.core.PreferenceControllerMixin;
@@ -57,8 +58,8 @@ public class FirmwareVersionPreferenceController extends AbstractPreferenceContr
                     sb.append("\n");
                     sb.append(aquaBuildDate);
                 }
-                preference.setSummary(sb.toString());
-                preference.setEnabled(true);
+                pref.setSummary(sb.toString());
+                pref.setEnabled(true);
         }
     }
 
