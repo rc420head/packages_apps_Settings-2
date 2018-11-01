@@ -149,12 +149,9 @@
         android:entries="@array/system_theme_style_entries"
         android:entryValues="@array/system_theme_style_values" />
 
-    <ListPreference
+    <Preference
         android:key="qs_tile_style"
-        android:title="@string/qs_tile_style_title"
-        android:persistent="false"
-        android:entries="@array/qs_selector_entries"
-        android:entryValues="@array/qs_selector_values" />
+        android:title="@string/qs_tile_style_title" />
 
     </PreferenceCategory>
 
