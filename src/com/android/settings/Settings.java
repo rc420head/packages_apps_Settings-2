@@ -177,4 +177,7 @@ public class Settings extends SettingsActivity {
 
 	// Custom Settings Categories
     public static class CoralReefActivity extends SettingsActivity { /* empty */ }
+    // Ambient play
+    public static class AmbientPlayHistoryActivity extends SettingsActivity { /* empty */ }
+
 }

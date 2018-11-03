@@ -20,6 +20,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.settings">
 
+    <!-- Ambient Indication -->
+    <uses-permission android:name="org.pixelexperience.ambient.play.history.MANAGE_HISTORY" />
+
     <application>
 
 		<!-- Coral Reef -->
@@ -39,6 +42,18 @@
                        android:resource="@string/coralreef_title" />
             <meta-data android:name="com.android.settings.summary"
                        android:resource="@string/coralreef_summary"/>
+        </activity>
+
+        <!-- Ambient play history activity. -->
+        <activity android:name="Settings$AmbientPlayHistoryActivity"
+                android:label="@string/ambient_play_history"
+                android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.aquarios.ambientplay.AmbientPlayHistory" />
         </activity>
 
      </application>
