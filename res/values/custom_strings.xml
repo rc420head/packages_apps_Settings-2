@@ -172,13 +172,17 @@
     <string name="ambient_play_history_menu_add_to_home">Add to Home Screen</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Are you sure?</string>
 
-   <!-- Force authorize substratum packages -->
-   <string name="force_authorize_substratum_packages_title">Force authorize every theme app</string>
-   <string name="force_authorize_substratum_packages_summary">Allow theme apps from unknown sources</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Force authorize every theme app</string>
+    <string name="force_authorize_substratum_packages_summary">Allow theme apps from unknown sources</string>
 
-   <!-- Manage applications: show substratum overlays -->
-   <string name="filter_substratum_apps">Substratum overlays</string>
-   <string name="menu_show_substratum">Show overlays</string>
-   <string name="menu_hide_substratum">Hide overlays</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Substratum overlays</string>
+    <string name="menu_show_substratum">Show overlays</string>
+    <string name="menu_hide_substratum">Hide overlays</string>
+
+    <!-- Swipe fp to dismiss notifications -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
 
 </resources>
