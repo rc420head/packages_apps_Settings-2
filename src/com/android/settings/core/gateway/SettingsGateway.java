@@ -137,8 +137,8 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.aquarios.ambientplay.AmbientPlayHistory;
-
 import com.aquarios.coralreef.CoralReef;
+import com.android.settings.wifi.tether.WifiTetherSettings;
 
 public class SettingsGateway {
 
@@ -154,6 +154,7 @@ public class SettingsGateway {
             SimSettings.class.getName(),
             TetherSettings.class.getName(),
             WifiP2pSettings.class.getName(),
+            WifiTetherSettings.class.getName(),
             BackgroundCheckSummary.class.getName(),
             VpnSettings.class.getName(),
             DateTimeSettings.class.getName(),
