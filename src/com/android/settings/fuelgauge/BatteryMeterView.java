@@ -97,21 +97,25 @@ public class BatteryMeterView extends ImageView {
             setMeterStyle(style);
             switch (style) {
                 case BatteryMeterDrawableBase.BATTERY_STYLE_PORTRAIT:
-                    mIntrinsicWidth = mContext.getResources().getDimensionPixelSize(R.dimen.battery_meter_width);
-                    mIntrinsicHeight = mContext.getResources().getDimensionPixelSize(R.dimen.battery_meter_height);
+                    mIntrinsicWidth = mContext.getResources().getDimensionPixelSize(
+                                      R.dimen.battery_meter_width);
+                    mIntrinsicHeight = mContext.getResources().getDimensionPixelSize(
+                                      R.dimen.battery_meter_height);
                     setShowPercent(false);
                     break;
                 case BatteryMeterDrawableBase.BATTERY_STYLE_CIRCLE:
                 case BatteryMeterDrawableBase.BATTERY_STYLE_BIG_CIRCLE:
-                    mIntrinsicWidth = mContext.getResources().getDimensionPixelSize(R.dimen.battery_meter_height);
-                    mIntrinsicHeight = mContext.getResources().getDimensionPixelSize(R.dimen.battery_meter_height);
-                    showPercentInsideCircle(false);
+                    mIntrinsicWidth = mContext.getResources().getDimensionPixelSize(
+                                      R.dimen.battery_meter_height);
+                    mIntrinsicHeight = mContext.getResources().getDimensionPixelSize(
+                                      R.dimen.battery_meter_height);
                     break;
                 case BatteryMeterDrawableBase.BATTERY_STYLE_DOTTED_CIRCLE:
                 case BatteryMeterDrawableBase.BATTERY_STYLE_BIG_DOTTED_CIRCLE:
-                    mIntrinsicWidth = mContext.getResources().getDimensionPixelSize(R.dimen.battery_meter_height);
-                    mIntrinsicHeight = mContext.getResources().getDimensionPixelSize(R.dimen.battery_meter_height);
-                    showPercentInsideCircle(false);
+                    mIntrinsicWidth = mContext.getResources().getDimensionPixelSize(
+                                      R.dimen.battery_meter_height);
+                    mIntrinsicHeight = mContext.getResources().getDimensionPixelSize(
+                                      R.dimen.battery_meter_height);
                     setDashEffect(new float[]{18,10}, 0);
                     break;
             }
