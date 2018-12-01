@@ -34,4 +34,7 @@
     <string name="sub_deactivate_failed">Deactivation failed.</string>
     <string name="available_sims_title">Available SIM cards</string>
 
+    <!-- OnePlus Navigation Gestures -->
+    <string name="use_bottom_gesture_summary">Navigation bar must be disabled!\n\nBack\n- Swipe up on left or right side\n\nHome\n- Swipe up center\n\nRecent apps\n- Swipe up center and hold\n\nLong press home\n- Short swipe up and hold in the center</string>
+    <string name="use_bottom_gesture_title">OnePlus Navigation gestures</string>
 </resources>
