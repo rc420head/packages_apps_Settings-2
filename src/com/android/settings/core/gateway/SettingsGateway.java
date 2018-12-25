@@ -140,7 +140,7 @@ import com.android.settings.wifi.WifiInfo;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
-import com.android.settings.aquarios.ambientplay.AmbientPlayHistory;
+
 import com.aquarios.coralreef.CoralReef;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
@@ -270,7 +270,6 @@ public class SettingsGateway {
             ToggleBackupSettingFragment.class.getName(),
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
             CoralReef.class.getName(),
-            AmbientPlayHistory.class.getName(),
             NavigationSettingsActivity.class.getName(),
             SmartbarSettingsActivity.class.getName(),
             FlingSettingsActivity.class.getName(),
